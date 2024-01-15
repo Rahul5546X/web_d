@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>not that good just kam chlane ke lie thik h bs</h1>
+    <h1>Farewell Party Survey Form</h1>
+    <form action="aad.php" method="post">
+
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name = "Name" placeholder="Enter your name" id = "name" >
+    </div>
+
+    <br>
+
+    <div>
+        <label for="Email">Email</label>
+        <input type="email" name = "Email" placeholder="Enter your email" id = "email">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="Age">Age</label>
+        <input type="text" name="age" id="age" placeholder = "Enter your age">
+    </div>  
+   
+    <br>
+
+    <div>
+        <label for="description">Which option best describes you</label>
+        <select name="Student" id="student"></select>
+        <select name="Teacher" id="Teacher"></select>
+
+    </div>
+
+    <div>
+        Will you attend the party?
+        <label for="party">Yes</label>
+        <input type="radio" name="yes_or_not" id="yes" value="yes">
+        <label for="party">No</label>
+        <input type="radio" name="yes_or_not" id="no" value = "no">
+    </div>
+
+    <div>
+        What did you think about the program?
+        <select name="" id=""></select>
+    </div>
+
+    <div>
+        <label for="textarea">Any comments or suggestions</label>
+        <textarea name="" id="" cols="7" rows="3"></textarea>
+    </div>
+    <div><input type="button" value="reset">
+    </div>
+    <input type="button" value="submit">
+
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
