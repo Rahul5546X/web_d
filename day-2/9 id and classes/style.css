@@ -1,0 +1,18 @@
+body{
+    background-color: aquamarine;
+}
+
+/* to target class in css we use . */
+/* to target id in css we use # */
+.red{
+    color: red;
+}
+
+.bg-yellow
+{
+    background-color: yellow;
+}
+
+#firstdiv{
+    /*  */
+}
