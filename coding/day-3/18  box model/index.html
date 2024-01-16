@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* e jo property h e dono boxes pr kam kregi */
+        .box {
+            background-color: aqua;
+        }
+
+        /* e box 1 ke lie h */
+        .box1 {
+            color: blue;
+            padding : 30px;
+            margin: 25px ;
+            border: 2px solid 
+            blueviolet;
+            height:200px;
+            box-sizing: border-box;
+            /* it means jo height di gyi h(200px) vo border aur padding ko jod ke di gyi h (margin not included) */
+            /* agr box-sizing:border-box ni likhene to jo content h sirf usiki height 200 px ho jayegi  
+            fir padding border jod ke vo bahut jada ho jayegi*/
+
+        }
+
+        /* e box 2 ke lie h */
+        .box2 {
+            color: brown;
+            padding : 30px;
+            margin: 25px ;
+            border: 2px solid 
+            black;
+            height:200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <h3>
+        we will learn about border margin padding and content in css
+    </h3>
+    css mn hr chiz ek box hoti h kuch bhi ho sb box hota h
+    <ul>
+        <li>Margin</li>
+        <li>Padding</li>
+        <li>content</li>
+        <li>Border</li>
+        total height = add all the elements
+    </ul>
+    <!--  do classes di h hmne ek box aur ek box 1  -->
+    <!-- multiple classes deni ho to space dal kr de skte hn -->
+
+
+    <div class="box box1"> I'm a box 1 </div>
+    <div class="box box2"> I'm a box 2</div>
+
+    <br>
+
+    <img src="box.png" width="350" alt="box demonsteration">
+
+    <h1>Margin Collapse</h1>
+    <p>agr do element ki margin collapse ho rhi h to jo bdi h vo ek bar hi lgegi</p>
+
+    <!-- google pr dekhna yellow vali image -->
+    <img src="margin collapse.png" width =300 alt="margin collapse ki diagram h">
+
+
+</body>
+
+</html>
