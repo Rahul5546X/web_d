@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <section>
+        <style>
+            /* universal selector */
+            * {
+                margin: 0%;
+                padding: auto;
+                background-color: aliceblue;
+            }
+
+            /* Element selector */
+
+            span {
+                background-color: red;
+            }
+
+            /* all the divs will be red
+            background-color is property and red is property value */
+
+            /* class selector */
+            .blue {
+                background-color: blue;
+            }
+
+            /* ID selector */
+            #violet {
+                background-color: blueviolet;
+            }
+
+            /* child selector */
+            div>p {
+                background-color: bisque;
+            }
+
+            /* descendant selector */
+            div p {
+                color: blue;
+            }
+
+            /* pseudo selectors */
+            a:visited {
+                color: yellow;
+            }
+
+            a:hover {
+                /* color: aqua; */
+                background-color: black;
+            }
+
+            a:active {
+                color: black;
+            }
+
+            a:link {
+                color: chocolate;
+            }
+
+
+            p:first-child{
+                background-color: aquamarine;
+            }
+            /* jahan jahan parah first child h kisi bhi element ka vahan vahan e change ho jayega */
+
+        </style>
+    </section>
+
+</head>
+
+<body>
+    <h1>Selectors in CSS</h1>
+    1. ELEMENT SELECTOR
+    <br>
+    <!-- <div>
+    </div> -->
+    <span>
+        I'm a div guys and my background is red.
+    </span>
+    <br>
+    2. CLASS SELECTOR <br>
+    if we want to change the element which have same class
+    <div class="blue">
+        I'm a another div with class blue
+    </div>
+
+
+    3. ID Selectors <br>
+    if we want to change some element with specific id
+
+    <div id='violet'>
+        I'm a div with id
+    </div>
+
+    4. child Selectors <br>
+
+    man lo div ke andr koi parah h uska color change krna h to hm child use krte hn
+    <br>
+    <h4>lekin direct child hona chaiye dive ke andr in short div ke andr p hona chaiye</h4>
+    <h4>na ki div ke andr main h uske andr p h</h4>
+
+    <div>
+        <p>i'm a parah inside div direct child hun mn</p>
+    </div>
+
+
+    5. descendant Selectors <br>
+    <h4>man lo div ke andr main h uske andr p h to usko change krne ke lie hm descendant use kr skte hn child ki jgh
+    </h4>
+
+    <div>
+        <main>
+            <p>i'm a parah inside main which in inside div direct child nahi hun mn</p>
+        </main>
+    </div>
+
+
+    5. Pseudo Selectors <br>
+    links ka color bgera change krne mn use hote hn e
+    <br>
+    <a href="https://www.google.com">go to google</a>
+    <br>
+    <a href="https://www.geeksforgeeks.com">go to geeksforgeeks</a>
+    <br>
+    <a href="https://www.javapoint.com">go to javapoint</a>
+</body>
+
+</html>
