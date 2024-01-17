@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow properties</title>
+    <style>
+        div {
+            border: 2px solid black;
+            width: 250px;
+            height: 70px;
+            background-color: beige;
+        }
+
+        .box1 {
+            overflow: auto;
+        }
+
+        .box2 {
+            overflow: scroll;
+            /* white-space: nowrap;  */
+            /* give vertical scroll bar */
+        }
+
+        .box3 {
+            overflow: clip;
+            /* diables programmatically  scrolling and same to hidden */
+        }
+        .box4 {
+            overflow: hidden;
+        }
+        .box6 {
+            overflow-y: hidden;
+            /* text-overflow: ellipsis; */
+            overflow-x: scroll;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>1. overflow auto</h3>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas quae beatae. Repellat nostrum assumenda
+        dolore, aperiam fuga blanditiis unde culpa recusandae quam modi porro dolor natus perspiciatis tenetur optio
+        saepe laudantium ut fugit.
+    </div>
+    <br>
+    <h3>2. overflow scroll</h3>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas quae beatae. Repellat nostrum assumenda
+        dolore, aperiam fuga blanditiis unde culpa recusandae quam modi porro dolor natus perspiciatis tenetur optio
+        saepe laudantium ut fugit.
+    </div>
+    <br>
+    <h3>3.overflow clip</h3>
+    <div class="box3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas quae beatae. Repellat nostrum assumenda
+        dolore, aperiam fuga blanditiis unde culpa recusandae quam modi porro dolor natus perspiciatis tenetur optio
+        saepe laudantium ut fugit.
+    </div>
+    <br>
+    <h3>4. overflow hidden</h3>
+    <div class="box4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas quae beatae. Repellat nostrum assumenda
+        dolore, aperiam fuga blanditiis unde culpa recusandae quam modi porro dolor natus perspiciatis tenetur optio
+        saepe laudantium ut fugit.
+    </div>
+    <br>
+    <h3>5. overflow default</h3>
+    <div class="box5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas quae beatae. Repellat nostrum assumenda
+        dolore, aperiam fuga blanditiis unde culpa recusandae quam modi porro dolor natus perspiciatis tenetur optio
+        saepe laudantium ut fugit.
+    </div>
+    <br>
+    <br><br>
+
+    <h3>6. overflow x and y </h3>
+    <div class="box6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quas quae beatae. Repellat nostrum assumenda
+        dolore, aperiam fuga blanditiis unde culpa recusandae quam modi porro dolor natus perspiciatis tenetur optio
+        saepe laudantium ut fugit.
+    </div>
+
+
+
+</body>
+
+</html>

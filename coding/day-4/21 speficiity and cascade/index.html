@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECIFICITY AND CASCADE</title>
+</head>
+<body>
+
+    <div>
+        <h2>SPECIFICITY AND CASCADE </h2>
+            used when two styles collide with each other. In simple words it is just priority
+        
+            <!-- CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason that the text of the button styled with the above CSS will be purple.
+
+Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm has 4 distinct stages.
+
+Position and order of appearance: the order in which your CSS rules appear
+Specificity: an algorithm that determines which CSS selector has the strongest match
+Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+Lets look into all these one by one\ -->
+<!-- Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000 -->
+
+        <P> AGR ek hi trh ka selector hoga to jo sbse bad mn hoga(jo sbse last mn kia hoga define)vo lgega hmare code pr</P>
+        <h4>TRY to use selector with less Specificity so that you can override it easily later</h4>
+
+        <div>
+        <ol>
+            <li>Important -- if we use , it can not be overrided 10,000</li>
+
+            <h4>calculating specificity</h4>
+
+        <li>Inline style--Highest priority 1000 </li>
+        <li>ID selectors(#): 100</li>
+        <li>Class selectors(.), attribute selectors, and pseudo-classes(:hover): 10</li>
+        <li>Element selectors and pseudo-elements(::before): 1</li>
+        <li>Universal Selector: 0</li>
+    </ol>
+    </div>
+
+    <p>if we have selector like h1.yellow so add the specificity h1-1 and .yellow 10 so total = 11</p>
+
+    <h2>
+        <p>avoid inline and important, try to use classes</p>
+    </h2>
+    </div>
+    
+
+
+</body>
+</html>

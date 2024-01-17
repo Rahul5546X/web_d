@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and outlines</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box{
+            border: 2px solid black;
+            /* syntax for shadow
+            box-shadow: h-offset v-offset blur spread color inset;
+             */
+             box-shadow: 5px 10px 9px 0px green;
+             display: flex;
+             justify-content: center;
+
+             /* syntax for text shadow
+             text-shadow: h-offset v-offset blur color; */
+             /* text-shadow: -20px 2px 9px red */
+             text-shadow: 2px 2px 1px gray
+        }
+        .text-element{
+            text-shadow: -18px 15px 9px #2b1515;
+        }
+        h3{
+            border: 2px solid black;
+            outline: auto darkblue;
+            outline-offset: 8px;
+            border-radius: 34px;
+            display: flex;
+            justify-content: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class = "box">
+        I'm a div guys
+    </div>
+    <p class = "text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta delectus labore deleniti quidem laudantium recusandae quos neque, perferendis maxime sed unde rem quis doloribus officiis pariatur ex beatae molestiae fuga obcaecati cupiditate quaerat expedita architecto voluptate non? Laborum quisquam ipsum ab ipsam doloribus fuga modi.
+    </p>
+<br><br>
+
+    <h3 >Outlines</h3>
+    <!-- syntax for outlines
+    outline: width style color; -->
+    <p>drawn outside borders to make an element standout. width of outlines can not be changed, can not be curved directlly we have to use border radius  to curve outlines</p>
+    Offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element
+</body>
+</html>

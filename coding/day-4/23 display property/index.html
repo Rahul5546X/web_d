@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        .div {
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        .div2 {
+            background-color: aqua;
+            border: 2px solid black;
+            display: inline;
+        }
+        .div3 {
+            background-color: aqua;
+            border: 2px solid black;
+            display: block;
+            display: flex ;
+            justify-content: center;
+            /* 
+            display: none; box bhi gayb ho jayega aur jo usne jgh li thi vo bhi gayb ho jayegi site pr se
+
+            visibility: hidden;
+            gayb ho jayega site pr se box ya div jo bhi h pr jo usne jgh li h vo vaise hi rhegi(vo nhi hogi gayb) 
+            */
+        }
+
+        .div4{
+            border: 2px solid black;
+            display: flex ;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>Used on inline and block elements</h3>
+    <div class="div">
+        I'm a div guys and you know I'm a block element
+    </div>
+    <span class="div">
+        guys I'm a span and I'm a inline element
+    </span>
+
+    <h4>Now if we want a block element to represent like inline element we'll set it display Property to inline</h4>
+
+    <div class="div2">
+        I'm a div guys and you know I'm a block element but my display property is inline.
+    </div>
+    <span class="div3">
+        guys I'm a span and I'm a inline element but my display property is block
+    </span>
+
+    <h3>on inline elements we can not change width , margin, padding so we have to use a inlineblock property </h3>
+    <h4>This property is quite similar to inline but dimension properties are allowed in the case of the inline-block display</h4>
+
+    <div class = "div4">
+        i'm a flexbox and used to centre a div 70-80% time
+    </div>
+
+
+</body>
+</html>

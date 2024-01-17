@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling lists</title>
+    <style>
+        ul {
+            background-color: antiquewhite;
+        }
+
+        ul li {
+            background-color: rgb(129, 129, 154);
+
+        }
+        .circle {
+            list-style-type: circle;
+        }
+
+        .square {
+            list-style-type: square;
+        }
+
+        .roman {
+            list-style: upper-roman;
+        }
+
+        .devnagari {
+            list-style: devanagari;
+        }
+
+        nav .o {
+            list-style-position: outside;
+            /* border:2px solid red */
+        }
+
+        .i {
+            list-style-position: inside;
+            /* border:2px solid red */
+        }
+
+        /* .guns{
+            list-style-image: url(gun\ for\ list.png);
+            background-size: 20px;
+        } */
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h3>The List Style Type property</h3>
+        <div class="simple_styling">
+            <h3>unordered list styling</h3>
+            <ul class="circle">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+
+            <ul class="square">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+            <h3>ordered list styling</h3>
+            <ol class="roman">
+                <li>order 1</li>
+                <li>order 2</li>
+                <li>order 3</li>
+            </ol>
+
+            <ol class="devnagari">
+                <li>order 1</li>
+                <li>order 2</li>
+                <li>order 3</li>
+            </ol>
+        </div>
+    </nav>
+
+
+    <nav>
+        <h3>Position of marker </h3>
+        <p>outside</p>
+        <ul class="o">
+            <li>111</li>
+            <li>22</li>
+            <li>33</li>
+        </ul>
+        <p>inside</p>
+        <ul class="i">
+            <li>23</li>
+            <li>22</li>
+            <li>33</li>
+        </ul>
+    </nav>
+
+    <nav>
+        <ul class="guns">
+            <li>AK47</li>
+            <li>GLOCK</li>
+            <li>SCAR-L</li>
+            <li>M24</li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

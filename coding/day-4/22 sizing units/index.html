@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sizing Units In CSS</title>
+    <style>
+        .box {
+            color: red;
+            border: 2px solid black;
+            width: 200px;
+            min-height: 80vh;
+            min-width: 80vh;
+            /* height: 20px;  */
+            background-color: beige;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>In this video we'll learn about sizing units in CSS</h3>
+        <h2>try to use vw and vh always</h2>
+        <div class="box">I'm a box guys
+ </div>
+        <!--  agr kisi block element ko centre krna ho to margin auto kr do bs -->
+
+        <ol>
+
+            <li>pixel--px</li>
+            <p>man lo aapne apne monitor ke hisab se width set kr di 1920px ab agr user ne site khholi aur uska monitor
+                chota hua to fir dikkat ho jayegi. To isliye px use na krke vw use krte hn</p>
+            <li>viewport--vw</li>
+            <P>it means ki jitna apka viewport (screen size) h uske hisab se width set kr do .Ye responsive unit hoti h
+                iska ek or advantage h horizontal scroll bar ni aati h issse</P>
+
+
+            <li>vh </li>
+            height acc. to viewport
+                <br>
+            <li>em</li>
+            <p>jitna iskko milne valla tha uska 2 gonna if 2 em</p>
+            <li>rm</li>
+            <p>root element ka 2 time if 2rm</p>
+
+            <li>vmin</li>
+            <p>jaise phone mn height max hogi and width min 
+                and laptop mn hogi height min and width max
+                <!-- <width:100vmin>
+                    
+                </width:100vmin> -->
+            </p>
+                <p>
+                    100 vmin -- 100 of jo minimum hoga width ya height mn se 100(min or max)
+                </p>
+            <li>vmax</li>
+            <li>min-height</li>
+            <li>min-width</li>
+            <li>% </li>
+            <p>work acc. to parent element</p>
+
+        </ol>
+    </div>
+
+we can also set min width and min height and it'll adjust the maximum automatically
+
+
+</body>
+</html>
