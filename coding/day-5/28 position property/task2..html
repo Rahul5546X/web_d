@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid gray;
+            width: 600px;
+            height: 250px;
+            overflow-x: scroll;
+            overflow-x: hidden;
+        }
+        .content{
+            position: relative;
+            left: 100px;
+        }
+        
+        .sidebar {
+            z-index: 1;
+            border: 2px solid gray;
+            background-color: green;
+            position: fixed;
+            width: 80px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <p>This is the sidebar. It should remain in position as the content scrolls
+                .</p>
+        </div>
+        <div class="content">
+            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
+                tomatillo melon azuki bean garlic.</p>
+            <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+                collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+                avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
+                horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean
+                swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd
+                swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean
+                chickweed potato bell pepper artichoke.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corporis ab magni. Deleniti, provident odit beatae voluptate iste cupiditate! Sit quia iusto porro delectus vitae eum magni rem nam placeat tempora! Quis odio eveniet iusto atque officia praesentium quam itaque animi excepturi veritatis dignissimos vel, molestiae fugit quo, laborum hic, rerum maxime reprehenderit alias voluptate? Omnis non pariatur commodi excepturi dolores ad iste nostrum maxime? Accusamus tenetur hic cumque unde magni ipsa cupiditate rerum nobis quibusdam ex quo itaque nemo laboriosam amet atque molestias, numquam laborum officia? Nam consequuntur perferendis sequi qui dolorum cumque in repudiandae, sapiente, repellendus consequatur magnam.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

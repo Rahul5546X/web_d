@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property Practice</title>
+    <style>
+        .container {
+            border: 5px solid gray;
+
+            position: relative;
+            width: 50vw;
+            z-index: 0;
+        }
+        .target {
+            z-index: -1;
+            border: 2px solid gray;
+            height: 50px;
+            width: 60px;
+            background-color: rgb(196, 16, 196);
+            position:absolute;
+            right: 3px;
+            top: 1px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+            melon azuki bean garlic.</p>
+        <div class="target">Target</div>
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+            collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        /* agr ap chahte ho ki koi element sbke upr aa jaye to uska z index jyada kr do
+         */
+        .parent {
+            /* Exception:  transform, filter or perspective properties can also make an element appear as positioned */
+            /* agr parent element mn inmn se koio bhi property lgi hogi to posistion absolute vala box isi parent ke realtive krega khud ko set */
+            border: 2px solid black;
+            /* height: 500px;
+            width: 80vw; */
+            margin: 4px;
+            padding: 3px;
+        }
+
+
+        .box {
+            border: 2px solid black;
+            height: 80px;
+            width: 80vw;
+            margin: 3px;
+            padding: 3px;
+        }
+
+        .box1 {
+            background-color: antiquewhite;
+            /* z-index: 5px; */
+            /* position: relative; */
+            /* left: 20px; */
+            /* it allows us to use top bottom left right */
+
+            /* 
+            position: sticky;
+            top: 0px; */
+            /* used for nav bar the box 1 will stick at top while  scrolling*/
+        }
+
+        .box2 {
+            background-color: chocolate;
+            /* z-index: 10px; */
+            /* position: absolute;
+            top: 0px; */
+            /* ismn box 2 apne parent element ko dhuundega aur uske relative lg jayega jaise is code mn iska koi paren element h hi nhi to e html tag ke relative lg jayega */
+
+            /* if the parent has it's position set as relative then box 2 will move acc. to the parent box*/
+        }
+
+        .box3 {
+            background-color: aqua;
+            /* position: fixed; */
+            /* bottom: 0px;
+            left: 23px; */
+        }
+
+        .box4 {
+            background-color: gray;
+        }
+
+        /* now if we want to apply top bottom left right z-index on our boxes then we have to change their position(which is static default)
+    
+        */
+    </style>
+
+</head>
+
+<body>
+    <h2>Position Property and Z-index in CSS</h2>
+
+    <div class="parent">
+        <div class="box box1">I'm a box 1</div>
+        <div class="box box2">I'm a box 2</div>
+        <div class="box box3">I'm a box 3</div>
+        <div class="box box4">I'm a box 4</div>
+    </div>
+
+</body>
+
+</html>
