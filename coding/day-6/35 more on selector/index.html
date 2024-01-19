@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /* .boxes{
+            background-color: gray;
+        } */
+
+
+        /* it means that if box is the first child of the parent class */
+        /* .box:first-child{
+            background-color: aqua;
+        } */
+
+        /* to acess single line of word jitne words first line mn honge vhi yellow honge*/
+        /* .box::first-line{
+            color: red;
+        } */
+        
+        /* .box::first-letter{
+            color: yellow;
+        } */
+
+        /* it means all element in boxes  */
+        /* .boxes *{
+            border: 2 px solid blue;
+        } */
+
+        /* grouping of selectors (*/
+        /* .a, .b, .c {
+            color: red;
+        } */
+
+        /* .box:nth-child(even)
+        {
+            background-color: gray;
+        } */
+
+
+        /* inserting element dynamically using css 
+        before and after */
+        /* these are pseudo elements */
+        .boxes::before{
+            content: "harry is good";
+        }
+
+        .boxes::after{
+            content: "nice i'm after";
+        }
+
+
+
+        /* jis chiz koo user select krega vo aqua ho jayegi */
+        ::selection
+        {
+            color: aqua;
+        }
+
+        input::placeholder{
+            background-color: gray;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="head"><h3>More things about selectors</h3></div>
+    <p>we already know about/p>
+    <ol>
+        <li class = "a">Universal</li>
+        <li class = "b">element</li>
+        <li class = "c">class</li>
+        <li>id</li>
+        <li>attribute</li>
+        <li>pseudo</li>
+        <li>child</li>
+        <li>descendant</li>
+    </ol>
+
+    <div class="boxes">
+        <div class="box">Hey i'm a first box Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium nemo quaerat itaque iusto eveniet quasi quis earum fugiat delectus! Perspiciatis, nesciunt. Aperiam quod possimus recusandae ipsa hic obcaecati, dicta neque.</div>
+        <div class="box">Hey i'm a box</div>
+        <div class="box">Hey i'm a box</div>
+    </div>
+    <input type="text" placeholder="Type your name  here">
+
+</body>
+</html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float and Clear</title>
     <style>
-
-        img{
+        img {
             height: 20vh;
             /* float: none; */
             /* float: right; */
@@ -15,40 +15,57 @@
             border: 2px solid blue;
         }
 
-        .whole{
+        .whole {
             border: 2px solid black;
             /* now if image is overflowing it let it overflow from it's own container */
-
             /* to prevent thid bkchodi we can use this  property */
             display: flow-root;
 
         }
-        .text{
+
+        .text {
             border: 2px solid red;
         }
-        p{
+
+        .two {
             border: 2px solid gold;
             /* it means that this p or div does not allow anything to flow on its right  or left*/
-            clear: left;
+            /* clear: left; */
+            clear: right;
         }
-
-
     </style>
 </head>
+
 <body>
     <h3>Float and clear</h3>
-    <h3>After flexbox these properties are used very rarely but still we should have knowledge about these properties</h3>
+    <h4>Just do not use it ever. you just need to have knowledge about this and don't use it ever.</h4>
+    <h4>Instead of this use border, margins, flexbox other properties</h4>
+    <h3>After flexbox these properties are used very rarely but still we should have knowledge about these properties
+    </h3>
 
     <div class="whole">
         <div class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus asperiores eveniet quos harum excepturi minima optio voluptates exercitationem quaerat doloribus.
-            </div>
-        
-            <img src="flowers.png" alt="">
-            <p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nulla Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, expedita? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis adipisci est obcaecati consequatur debitis dolore eum sed deserunt vero provident quia molestiae tenetur magnam, modi ipsa aspernatur assumenda voluptatum illum similique ut. Provident quo, dignissimos iusto in maxime ducimus ad placeat earum, aliquid soluta doloremque odit nesciunt perferendis. Laboriosam soluta assumenda quidem qui mollitia animi excepturi quasi expedita, aliquam sit odit itaque, fuga dolor saepe repudiandae minima impedit nostrum quam reprehenderit totam cum. Ut molestias animi asperiores corrupti, sapiente vero quae excepturi distinctio, provident odio architecto possimus repudiandae dignissimos minima tempore perferendis eaque sint dolore aspernatur et incidunt culpa voluptatem.</p>
-    </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus asperiores eveniet quos harum excepturi
+                minima optio voluptates exercitationem quaerat doloribus. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Nemo nostrum corrupti eligendi vero aspernatur rerum enim sequi unde. Aliquid, eaque
+                beatae? Ea ut, architecto perspiciatis rem deleniti similique fuga dolorem. Sequi cupiditate
+                reprehenderit labore ipsam eligendi eveniet error ut minus ratione asperiores excepturi deleniti
+                doloribus magni, nobis blanditiis explicabo molestiae.
+            </p>
+            <img src="flowers.png" alt="image of flower">
+        </div>
 
-    
+        <p class="two"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nulla Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quia, expedita? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Facilis adipisci est obcaecati consequatur debitis dolore eum sed deserunt vero provident quia molestiae
+            tenetur magnam, modi ipsa aspernatur assumenda voluptatum illum similique ut. Provident quo, dignissimos
+            iusto in maxime ducimus ad placeat earum, aliquid soluta doloremque odit nesciunt perferendis. Laboriosam
+            soluta assumenda quidem qui mollitia animi excepturi quasi expedita, aliquam sit odit itaque, fuga dolor
+            saepe repudiandae minima impedit nostrum quam reprehenderit totam cum. Ut molestias animi asperiores
+            corrupti, sapiente vero quae excepturi distinctio, provident odio architecto possimus repudiandae
+            dignissimos minima tempore perferendis eaque sint dolore aspernatur et incidunt culpa voluptatem.</p>
+    </div>
 
 </body>
 </html>

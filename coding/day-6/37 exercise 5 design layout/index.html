@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .whole {
+            border: 2px solid black;
+            width: 458px;
+            /* height: 500px; */
+            background-color: bisque;
+            overflow: auto;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+        }
+
+        .list {
+            background-color: goldenrod;
+            border: 2px solid blue;
+            list-style-type: none;
+            display: flex;
+            justify-content: left;
+            height: 51px;
+            padding: 8px;
+        }
+        li{
+            font-size: large;
+        }
+
+        .boxes {
+            /* display: inline; */
+            border: 2px solid black;
+            width: 430px;
+            height: 150px;
+            background-color: aliceblue;
+            justify-content: center;
+        }
+
+        .box1 {
+            display: inline-flex;
+            border: 2px solid red;
+            width: 190px;
+            height: 127px;
+            margin: 10px;
+            background-color: aquamarine;
+            justify-content: center;
+        }
+
+        .box2 {
+            display: inline-flex;
+            border: 2px solid red;
+            width: 190px;
+            height: 127px;
+            margin: 10px;
+            background-color: aquamarine;
+            justify-content: center;
+        }
+
+
+
+        .rectangle {
+            /* position: relative; */
+            border: 2px solid green;
+            border-radius: 10px;
+            padding: 22px;
+            margin: 13px;
+            background-color: azure;
+        }
+
+        .logo {
+            img 
+            {
+                position: fixed;
+                width: 25px;
+                border-radius: 50%;
+                float: right;
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+
+
+        .footer {
+            clear: left;
+            border: 3px solid blueviolet;
+            background-color: rgb(113, 110, 107);
+        }
+    </style>
+
+</head>
+
+<body>
+    <H2>Designing a Layout</H2>
+    <main class="whole">
+        <header>
+            <nav class="navbar">
+                <ul class="list">
+                    <li>Home</li>
+                    <li>Blog</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Follow</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <div class="boxes">
+                <div class="box1">
+                    <p>
+                        I'm a box 1
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore recusandae soluta optio, eius
+                        ducimus odit minus enim voluptates
+                    </p>
+                </div>
+                <div class="box2">
+                    <p>
+                        I'm a box 2
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore recusandae soluta optio, eius
+                        ducimus odit minus enim voluptates
+                    </p>
+                </div>
+            </div>
+
+            <div class="rectangle">
+                Web Dev Sigma is very good course Lorem ipsum dolor sit, amet consectetur 
+            </div>
+
+            <div class="logo">
+                <img src="logo.png" width="20px" alt="logo image">
+            </div>
+        </main>
+        <footer class="footer">
+            this is footer Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, accusamus.
+        </footer>
+    </main>
+</body>
+
+</html>
