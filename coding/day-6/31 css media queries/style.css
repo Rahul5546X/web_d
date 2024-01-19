@@ -1,0 +1,43 @@
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0px;
+    height: 0px;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box {
+    width: 344px;
+    height: 344px;
+    background-color: steelblue;
+    padding: 3px;
+    margin: 3px;
+    text-align: center;
+}
+
+/* syntax for media query it'll be used to make responsive designs */
+
+@media screen and(orientation: portrait) {
+    body{
+        border: 2px solid red;
+    }
+    
+}
+
+@media only screen and (max-width:455px) {
+    span {
+        flex-direction: column;  /*not the best way to do it , it is just a example*/
+        text-align: center;
+    }
+
+    body {
+        background-color: aqua;
+    }
+}

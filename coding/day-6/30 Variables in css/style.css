@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* declaring variables */
+/* the variable must start with two dashes */
+
+/* the variables can hold color, background, numbers, strings, links, padding */
+
+:root {
+    --blue: #6495ed;
+    --white: #faf0e6; 
+    /* --one-color:white; */
+  }
+  
+  body {
+    background-color: var(--blue);
+  }
+  
+  h2 {
+    border-bottom: 2px solid var(--blue);
+  }
+  
+  .container {
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 15px;
+  }
+  
+  button {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+}
+/* agr kisi block ke andr define krenege to vo local variable hua us case mn global variable override ho jayega */
+
+
+/* ab jahan bhi mn e variable use krunga usko mn sidha yahan se change kr skta hun */
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color Website</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+
+        }
+        :root {
+            --Listitem1color: #ddddeb;
+            --Listitem2color: #05639d;
+            --Listitem3color: #2424cb;
+            --Listitem4color: #22e53f;
+            --Listitem5color: #291324;
+            --Listbgcolor: rgb(131, 131, 97);
+            --bodybgcolor: rgb(137, 119, 119);
+            --hoverbg:#2c1115;
+            /* --one-color:white; */
+
+        }
+
+        body {
+            background-color: var(--bodybgcolor)
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            margin: 23px;
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            background-color: var(--Listbgcolor);
+        }
+
+        .list li {
+            list-style-type: none;
+            margin-right: 15px;
+            border: none;
+            /* color: var(--Listitemcolor); */
+        }
+
+        .l1 {
+            color: var(--Listitem1color);
+    
+        }
+        .l1:hover{
+            font-size: larger;
+            background-color: var(--hoverbg);
+        }
+        .l2 {
+            color: var(--Listitem2color);
+    
+        }
+        .l2:hover{
+            font-size: larger;
+            background-color: var(--hoverbg);
+        }
+        .l3 {
+            color: var(--Listitem3color);
+        }
+        .l3:hover{
+            font-size: larger;
+            background-color: var(--hoverbg);
+        }
+        .l4 {
+            color: var(--Listitem4color);
+    
+        }
+        .l4:hover{
+            font-size: larger;
+            background-color: var(--hoverbg);
+        }
+        .l5 {
+            color: var(--Listitem5color); 
+        }
+        .l5:hover{
+            font-size: larger;
+            background-color: var(--hoverbg);
+        }
+        li a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>A mutli colored nav bar</h1>
+
+    <nav class="navbar">
+        <div class="list">
+            <ul>
+                <li class="l1"><a href="https://www.google.com" target="_blank">Home</a></li>
+                <li ><a class="l2" href="https://www.codewithharry.com/notes/" target="_blank">Notes</a></li>
+                <li ><a class="l3" href="https://www.canva.com/learn/portfolio/" target="_blank">Portfolio</a></li>
+                <li ><a class="l4" href="https://www.wix.com/html5us/hiker-blog?utm_source=bing&utm_medium=cpc&utm_campaign=ms_us_en_blog_dt_ep_portfolio2_purpage_jan23^blog^search%20-%20bing%20us^&experiment_id=blog^e^^&msclkid=c46e638736ca1ca96b71062d0f386df3" target="_blank" >Blog</a></li>
+                <li ><a class="l5" href="https://github.com/Rahul5546X" target="_blank">Contact me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+</body>
+</html>
