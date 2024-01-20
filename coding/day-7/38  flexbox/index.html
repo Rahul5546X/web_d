@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 0px;
+        }
+        
+
+
+        .container {
+            /* margin: 2px; */
+            /*isse pure container ki margin chalegi with respect to page*/
+            
+            /* taki flex wrap kam kr ske isliye isko comment kr dena */
+            height: 100vh;
+            width: 60vw;
+            border: 2px solid red;
+            /* width: 70vw; */
+
+
+            /* e vali property hmesa container ya parent elelment mn hi lgana  */
+            display: flex;
+
+            /* horizontally centre */
+            /* work acc. to main axis */
+            justify-content: center;
+
+
+            /* vertically centre */
+            /* work acc. to main axis */
+            /* agr element sirf ek line mn h  */
+            /* align-items: center; */
+            /* e hr ek item ke lie hoga */
+
+            /*  agr ek line se niche chle gye hn to e use krni chaiye tbhi use kro jb multiple line hoti h*/
+            /* e jitna bhi content h container ke andr us sarr ke lie hoga */
+            align-content: center;
+
+
+            /* default is left to right row */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+
+
+
+            /*  if overflow occurs*/
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            /* if height is fixed then it can not be wrapped properly */
+
+
+
+        /*flex-flow: direction  */
+        /* agr e dono chizn ek sath krni ho to e use kr skte hn */
+            /* flex-flow: row wrap; */
+
+
+
+
+            /* most usefull */
+
+            /* gap property */
+            /* sare elements ke bich 20 px gap ho jayega horizontal vertical dono */
+
+            /* just use gap or margin(in box) once at a time. do not use them simultaneously */
+            /* gap: 20px;
+            row-gap: 4px;
+            column-gap: 20px; */
+
+            gap: 10px 20px ;
+            /* gap: rowgap columngap; */
+
+        }
+
+
+        .box {
+            /* e margin or padding boxes pr legengi with respect to container*/
+            /* margin: 4px; */
+            background-color: aqua;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+        }
+
+
+        .order-1{
+
+            /* default order 0 */
+            /* jiska order sbse km hoga sbse phle vhi ayega */
+            /* jitna jada order hoga utne bad mn element ayega */
+                order: 1;
+            }
+            .order-2{
+                order: 2;
+            }
+
+            .order-3{
+                order: 3;
+            }
+
+        .list{
+            display: flex;
+            gap: 20px;
+        }
+        .list2{
+            display: flex;
+            gap :20px; 
+        }
+
+
+        .container2{
+            /* default flex-grow: 0; */
+            flex-grow: 1;
+            width: 60vw;
+
+            height: 60vh;
+            border: 2px solid red;
+            display: flex;
+            justify-content: start;
+            
+        }
+        .box1{
+            background-color: aqua;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+        }
+
+        .it1{
+            /* item one 2 item ki jgh lega */
+            flex-grow: 2;
+            align-self: flex-end;
+
+            /* flex-shrink: 2; */
+            /* the item will have ability to shrink if needed */
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h2>Flexbox</h2>
+
+    <div class="container">
+
+        <div class="box" >1</div>
+        <div class="box">2</div>
+        <div class="box order-3">3</div>
+        <div class="box order-2"  >4</div>
+        <div class="box">5</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <br><br>
+
+
+
+    <br>
+    <h4>
+        there is no justify items.
+    </h4>
+    <h3>main axis -- left to right
+        <p>jis directon mn flex hote hn element vo hoti h main axis,
+            <br>if flex-direction row then main axis left to right
+            <br>
+            if flex-direction column so main axis top to bottom
+        </p>
+    </h3>
+    <br><br>
+    <h3>
+        cross axis -- top to bottom
+        <br>
+        jis mn flex nahi ho rhe hote hn
+    </h3>
+
+
+    <h4> main start</h4>
+    <h4> cross start</h4>
+    <h4> main size</h4>
+    <h4> cross size</h4>
+
+    <h3>Flex properties on container</h3>
+    <ol class = "list"><li>Display Flex</li>
+    <li>Flex direction</li>
+    <li>justify-content</li>
+    <li>align-items</li>
+    <li>align-items</li>
+    <li>flex-wrap</li>
+    <li>flex-flow</li>
+    <li>Gap</li></ol>
+
+    <h3>Item Properties</h3>
+    <ol class = "list2">
+        <li>Order</li>
+        <li>FLex grow</li>
+        <li>flex shrink</li>
+        <li>align-self</li>
+    </ol>
+
+    <div class="container2">
+        <div class="box1 "></div>
+        <div class="box1"></div>
+        <div class="box1 it1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+
+
+    <img width= 400px src="row.png" alt="">
+    <img width= 400px src="column.png" alt="">
+</body>
+
+</html>

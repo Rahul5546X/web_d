@@ -1,0 +1,190 @@
+        * {
+            margin: 10px;
+            padding: 0px;
+        }
+
+        /* nav bar */
+
+        .list {
+            display: flex;
+            flex-grow: 0;
+            justify-content: end;
+            gap: 10px;
+            list-style-type: none;
+        }
+
+        /* part 1 */
+        .head {
+            text-align: center;
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        .b1 {
+            text-decoration: none;
+            font-size: x-large;
+            color: white;
+            background-color: brown;
+            /* border: 4px solid black; */
+            border-radius: 4px;
+        }
+
+        .head3 {
+            margin-left: 100px;
+            margin-right: 100px;
+            text-align: center;
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .b2 {
+            font-size: xx-large;
+            text-decoration: none;
+            /* border: 4px solid black; */
+            border-radius: 6px;
+            color: white;
+            background-color: rgb(96, 110, 213);
+
+        }
+
+        /* part 2 */
+
+        .container2 {
+            display: flex;
+            flex-direction: row;
+            border: 2px black;
+            width: 100vw;
+            height: auto;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .boxes {
+            text-align: center;
+            height: 200px;
+            width: 31vw;
+            background-color: rgb(202, 196, 196);
+            /* border: 2px solid brown; */
+        }
+
+        .pin {
+            font-size: xxx-large;
+            margin: 10px;
+        }
+
+        .btninbox {
+            position: relative;
+            font-size: xx-large;
+            margin: 9px;
+            top: 60px;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+
+        .btnbox1 {
+            color: white;
+            background-color: rgb(96, 110, 213);
+        }
+
+        .btnbox2 {
+            color: white;
+            background-color: rgb(109, 228, 109);
+        }
+
+
+        /* part 3 */
+        .part3 {
+            background-color: black;
+        }
+
+        .h1hed {
+            font-size: xxx-large;
+        }
+
+        .p3 {
+            color: white;
+            text-align: center;
+            font-size: x-large;
+        }
+
+        .container3 {
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .form {
+            border-radius: 5px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .h3 {
+            color: blue;
+            font-size: xxx-large;
+        }
+
+        .h5 {
+            font-weight: lighter;
+            font-size: xx-large;
+        }
+
+        .btmail {
+            display: block;
+            position: relative;
+            left: 150px;
+            bottom: 10px;
+            background-color: rgb(96, 110, 213);
+            color: white;
+            border-radius: 5px;
+            font-size: xx-large;
+        }
+
+        #m1 {
+            font-size: xx-large;
+        }
+
+        .content {
+            color: white;
+        }
+
+        /* last part */
+        .listm{
+            list-style-type: none;
+        }
+
+        .part4{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .form2{
+            border-radius: 7px;
+            width: 250px;
+            
+        }
+
+        #m2{
+            border-radius: 5px;
+            text-align: center;
+        }
+        .subs{
+            position: relative;
+            text-align: center;
+            background-color: rgb(108, 108, 249);
+            color: white;
+            font-size: larger;
+            border-radius: 5px;
+            left: 25px;
+            
+        }
+
+   
