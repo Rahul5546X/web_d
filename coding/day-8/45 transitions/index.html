@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .container{
+            border: 2px solid black;  
+            width: auto;
+            height: 70vh;
+            background-color: aqua;
+        }
+
+
+        .box{
+            margin: 5px;
+            border: 2px solid red;
+            width: 20vw;
+            background-color: antiquewhite;
+
+            /* transition-property: background-color, width,height;
+            transition-duration:3s ;
+            transition-timing-function: ease-in-out ;
+            transition-delay:1s ; */
+            /* all in one */
+            /* transition: width 3s ease-in-out 0s, height 3s ease-in-out 0s, background-color 3s ease-in-out 0s , text-align 3s; */
+            /* transition: all 3s ease-in 0s */
+        }
+        .box:hover{
+         /* transform: translateX(10vw) translateY(10vh); */
+            background-color: brown;
+            width: 50vw;
+            height: 50vh;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box ">
+            guys mujh pr transitions lgai gyi h
+        </div>
+    </div>
+    
+</body>
+</html>
