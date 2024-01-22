@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .container {
+            border: 2px solid black;
+            /* width: 70vw; */
+        }
+
+        .box {
+            margin: 5px;
+            height: 40px;
+            width: 50px;
+            border: 2px solid red;
+            /* applying animation on the box */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+
+            /* animation-name: rahulKaAnimation;
+            animation-duration: 3s; */
+            /* animation-duration: infinite; */
+            /* to repeat */
+            /* animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+            animation-delay: 1s; */
+
+
+            /* ulte se surur hoga */
+            /* animation-direction: reverse; */
+
+
+            /* animation-direction: normal;
+            animation-play-state: running; */
+            animation: rahulKaAnimation 3s ease-in 2s infinite ,harry2 3s ease-in 2s infinite ;
+
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: backwards; */
+        }
+
+        /* after @keyframes we can give it any name that we want */
+        @keyframes rahulKaAnimation {
+            from {
+                background-color: aqua;
+            }
+
+            to {
+                background-color: red;
+                transform: translateX(1000px);
+            }
+        }
+
+
+        @keyframes harry2 {
+            0% {
+                transform: rotate(100deg);
+            }
+            20% {
+
+                transform: rotate(200deg);
+            }
+            50% {
+
+                transform: rotate(220deg);
+            }
+            70% {
+                transform: rotate(300deg);
+            }
+            100% {
+                transform: rotate(400deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Animations in CSS</h1>
+    <div class="container">
+        <div class="box">
+            box box
+        </div>
+    </div>
+
+
+</body>
+
+</html>

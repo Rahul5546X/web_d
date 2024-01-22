@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            margin: 10px;
+            background-color: blue;
+            border: 2px solid black;
+            width: 99vw;
+            height: 80vh;
+            position: relative;
+            /* justify-content: center; */
+            /* align-items: end; */
+        }
+
+        .ball {
+            width: 121px;
+            height: 121px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            /* animation: bounce 5s 1s infinite; */
+            animation: animationX 4s linear infinite ,animationY 1s ease-out infinite alternate;
+        }
+
+        @keyframes animationX {
+            from{
+                left: 0;
+            }
+            to{
+                left:50% ;
+            }
+        }
+        @keyframes animationY {
+            from{
+                bottom :0;
+            }
+            to{
+                bottom: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercise 7-Bounce Animation</h1>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>

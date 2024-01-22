@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 40vw;
+            height: 40vh;
+            border: 2px solid black;
+
+            /* background-image: url(https://tse4.mm.bing.net/th?id=OIP.yl0EhPJdWzaVDdAn99cHCQHaEo&pid=Api&P=0&h=220); */
+/* image will repeated from x and y axis agr khalil jgh bch jaye container mn */
+
+            /* background-repeat: no-repeat; */
+            background-repeat: repeat-y;
+            background-position: center;
+
+            /* for this check mdn reference */
+            /* background-clip: ; */
+
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+            /* now if we do this to fit the image inside the container it's aspect ratio get distorted */
+            /* so if we want the image to fit in the box while maintaining it's aspect ratio we can use object-fit properties */
+
+            /* these are applied on the image not on the container itself */
+
+            /* if we want to cover the whole height and width and aspect ratio to be managed and there should be no cutting of image then we can use object-fit:contain */
+
+            /* object-fit: contain; */
+            /* but there will be spaces from all sides */
+
+
+            /* it'll cover the height and width given to the image while maintainig the aspect ratio */
+            object-fit: cover; 
+
+
+            /* it cuts half the portion so if we want a specific portion we can use object position */
+            object-position: 10px 15px  ;
+            /* object-position: right; */
+
+            
+
+            /* default */
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+            /* isse lambi ho jayegi image */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Object-Fit and Object-Cover</h1>
+    <div class="container">
+        <img src="https://coolwallpapers.me/th700/3063336-activity_adult_adventure_beautiful_camera_casual_girl_lake_landscape_leisure_mountains_nature_outdoors_people_person_photography_portrait_recreation_summer_sun_sunrise_sunset_taking-picture_touri.jpg" alt="">
+    </div>
+
+</body>
+</html>
