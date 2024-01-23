@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* 1st part */
+        .container1 {
+            border: solid red;
+            height: 90vh;
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/16006346-87f9-4226-bc25-a1fb346a2b0c/9662d0fd-0547-4665-b887-771617268815/IN-en-20240115-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+
+        }
+
+        .navbar {
+            margin: 24px;
+        }
+
+        .netflix {
+            display: flex;
+            justify-content: start;
+            float: left;
+            margin: 4px;
+            color: rgb(229,9,20);
+            font-size: x-large;
+            font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        }
+
+        .list {
+            display: flex;
+            list-style-type: none;
+            gap: 40px;
+            justify-content: end;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            color: rgb(255, 255, 255);
+            /* text-align: center; */
+            font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+            justify-content: end;
+            align-items: center;
+            margin: 6%;
+        }
+
+        .welcome {
+            margin: 0px;
+            font-size: 1.125rem;
+            font-weight: 400;
+
+
+        }
+        .unlimited {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+
+        }
+        .watch {
+            margin: 1rem 0 0;
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
+        .button-R
+        {
+            margin: -10px;
+            /* position: fixed; */
+            display: flex;
+            justify-content: center;  
+        }
+        .part2{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+.Membership{
+    background-color: red;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: x-large;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 19px ;
+    font-weight: bold;
+}
+
+
+/* 2nd part */
+
+.container2{
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-column: 1/2; */
+}
+.imgg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Not able to do this so gonna take help of harry bhai</h1>
+    <header>
+        <div class="container1">
+            <nav class="navbar">
+                <div class="netflix">NETFLIX</div>
+                <ul class="list">
+                    <li><select name="languages" id="lang">
+                            <option value="English">English</option>
+                            <option value="Espanol">Espanol</option>
+                            <option value="Korean">Korean</option>
+                            <option value="Fillipino">Fillipino</option>
+                        </select></li>
+                    <li><button>Sign Out</button></li>
+                </ul>
+            </nav>
+
+            <div class="part2">
+
+                <div class="text">
+                    <div class="welcome">
+                        <p>Welcome back, Akhil!</p>
+                    </div>
+                <div class="unlimited">
+                    <p>Unlimited movies, TV shows and more</p>
+                </div>
+                <div class="watch">
+                    <p>Watch anywhere. Cancel anytime.</p>
+                </div>
+            </div>
+            <div class="button-R">
+                <button class="Membership">Restart Your Membership</button>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+    <main class="p2">
+        <div class="container2">
+            <div class="text">
+                <div class="enjoy"></div>
+                <div class="smarttv"></div>
+            </div>
+            <div class="box-image">
+                <img  class = 'imgg'src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"alt="">
+                <div class="video">
+                    <video class = 'imgg' src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v
+                    " controls loop muted autoplay>
+                </video>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/16006346-87f9-4226-bc25-a1fb346a2b0c/9662d0fd-0547-4665-b887-771617268815/IN-en-20240115-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 90vh;
+    /* filter: contrast(1); */
+    filter: brightness(0.5);
+
+}
+
+/* nav bar part */
+.logo {
+    width: 107px;
+    /* height: 80px; */
+    fill: rgb(229, 9, 20);
+    z-index: 10;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.navbar {
+    margin: auto;
+    padding: 17px;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+}
+
+.btneng {
+    color: white;
+}
+
+.signout {
+    border: 2px;
+    border-radius: 7px;
+    padding: 8px 9px;
+    font-size: large;
+    color: white;
+    background-color: red;
+}
+
+.eng {
+    border: 2px;
+    border-radius: 7px;
+    padding: 9px 53px;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    background-color: transparent;
+}
+
+/* text part */
+.text {
+    margin: 10%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    gap: 20px;
+}
+
+.wl {
+    font-size: 1.125rem;
+    font-weight: 400
+}
+
+.ul {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.watch {
+    margin: 1rem 0 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.restart {
+    background-color: red;
+    color: white;
+    padding: 13px 58px;
+    font-size: x-large;
+    /* margin-bottom: 45px; */
+    border-radius: 6px;
+    border: none;
+
+}
+
+/* 1st part complete */
+.separation {
+    background-color: gray;
+    width: 100vw;
+    height: 10px;
+}
+
+/* 2nd part start */
+
+/* this part is copied */
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: start;
+    align-items: center;
+
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    position: relative;
+    z-index: 10;
+    width: 41vw;
+}
+
+.secimg video {
+    position: absolute;
+    top: 87px;
+    right: 67px;
+}
+
+.enjoy {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.watch {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+/* faq */
+.faq {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.faq h3 {
+    margin: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #2d2d2d;
+    width: 60vw;
+    height: 5vh;
+    text-align: start;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.btnl {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.restartl {
+    background-color: red;
+    color: white;
+    padding: 13px 58px;
+    font-size: x-large;
+    /* margin-bottom: 45px; */
+    border-radius: 6px;
+    border: none;
+}
+
+.footer {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    color: white;
+    font-size: small;
+    margin: 17px 10px;
+    text-align: center;
+}
+
+.footer {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 17px 10px;
+    margin-left: 244px;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+}
+
+.box a {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .first {
+        flex-direction: column;
+        min-height: auto;
+        padding: 4.5rem 0;
+    }
+
+}
