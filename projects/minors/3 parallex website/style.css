@@ -13,13 +13,13 @@
     flex-direction: column;
 }
 
-.image,
+/* .image,
 img {
     width: 60vw;
     height: 60vh;
     object-fit: cover;
     background-color: gainsboro;
-}
+} */
 
 #t1 {
     text-align: center;
@@ -56,6 +56,8 @@ img {
     background-image: url(https://getwallpapers.com/wallpaper/full/7/c/7/624165.jpg);
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .box1 p{
@@ -76,6 +78,8 @@ img {
     background-image: url(https://wallup.net/wp-content/uploads/2019/05/10/960400-turkey-landscape-nature-beauty-amazing-yedi-goller-sky-lake-forest-autumn.jpg);
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .box2 p{
     font-weight: bolder;
@@ -97,6 +101,8 @@ img {
     background-image: url(https://wallpapercave.com/wp/wp2665219.jpg);
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .box3 p{
     font-size: xx-large;
@@ -116,6 +122,8 @@ img {
     background-image: url(https://getwallpapers.com/wallpaper/full/7/c/7/624165.jpg);
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .box4 p{
     font-size: xx-large;

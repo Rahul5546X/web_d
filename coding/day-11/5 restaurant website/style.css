@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.first{
+    margin: 20px 20px;
+    width: 100vw;
+    /* height: 60vh; */
+    /* border: 2px solid red; */
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav p{
+    margin-top: 37px;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content img{
+    margin-top: 64px;
+    width: 35vw;
+}
+
+.text{
+    
+    margin: 144px 10px;
+    border: 2px solid blue;
+    /* width: 30vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.off{
+    background-color: green;
+    color: white;
+    font-size: 13px;
+    padding: 15px;
+    width: 17vw;
+}
+.enjoy {
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lorem{
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+.explore{
+    margin-top: 50px;
+    background-color: rgb(224, 141, 83);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 15vw;
+    font-weight: bolder;
+}
+
+.logos{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.one , .two , .three{
+    display: flex;
+    align-items: center;
+}
+
+
+.one p, .two p, .three p{
+    margin-top: 4px;
+}
+
+
+/* section 1 complete */
+
+.separation{
+    margin-top: -21px;
+    margin-bottom: -20px;
+    background-color: gray;
+    height: 2vh;
+    width: 103%;
+}
+.second{
+    margin: 20px 20px;
+    width: 100vw;
+    /* height: 100vh; */
+    /* height: 60vh; */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our{
+    margin: 20px 48px;
+    text-align: center;
+    background-color: green;
+    font-size: 25px;
+    color: white;
+    padding: 15px;
+    width: 7vw;
+}
+
+.explore1{
+   margin: 10px 10px;
+    text-align: center;
+
+    color: black;
+    font-size:35px;
+}
+
+.photos{
+    margin: 50px 20px;
+    /* display: flex; */
+    display: grid;
+    grid-template-areas: "o1 o1 o2 o3"
+                        "o1 o1 o2 o7" 
+                        "o4 o5 o6 o7"  ;
+    background-color: solid red;
+    border: 2px solid black;
+}
+
+.one{
+    margin: 10px;
+    border: 2px black;
+    /* width: 50px; */
+}
+.o1{
+    grid-area:o1;
+}
+
+.o2{
+    grid-area:o2;
+}
+
+.o3{
+   grid-area: o3;
+}
+
+.o4{
+    grid-area:o4;
+}
+
+.o5{
+    grid-area:o5;
+}
+.o6{
+    grid-area:o6;
+}
+.o7{
+    grid-area:o7;
+}
+
+.four{
+    display: flex;
+    justify-content: space-between;
+    margin: 34px 163px;
+    /* background-color: bisque; */
+}
+
+.four ul {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.four .mail{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.four .icons{
+    display: flex;
+    /* justify-content: space-between;
+     */
+     gap: 10px ;
+}
