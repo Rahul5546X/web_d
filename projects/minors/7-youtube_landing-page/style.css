@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.first{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 100%;
+}
+
+.side{
+    display: flex;
+}
+.icons{
+    margin: 16px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100px;
+}
+.icons h3{
+    text-align: center;
+    font-size:20px ;
+    cursor: pointer;
+}
+.icons h3:hover{
+    font-size: 25px;
+}
+.icons p{
+    text-align: center;
+    font-size: 13px;
+}
+
+/* .navbar start  */
+.navbar{
+    margin: 16px 10px;
+    width: 90vw;
+
+    /* if you wanna make your navbar sticky do this always add a top position */
+    /* position: sticky;
+    top: 3px; */
+}
+
+.navbar .list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .red{
+    color: red;
+    font-size: 20px;
+}
+
+.sbar{
+    margin-left: 125px;
+    margin-top: -5px;
+    width: 43vw;
+    height: 2vw;
+    border: 1px solid black;
+}
+.search-icon{
+    padding: 8px;
+    align-items: center;
+    height: 1vw;
+    background-color: gray;
+    margin-left: -62px;
+    margin-top: -5px;
+}
+
+.vd{
+    margin-left: 10px;
+}
+/* navbar ends here */
+
+/* buttons like gaming css html */
+.buttons .btn{
+    margin: 7px 2px;
+    border-radius: 13px;
+    padding: 3px 17px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttons .btn1{
+    background-color: black;
+    color: white;
+}
+/* grid */
+.grid{
+    margin: 10px 10px;
+    display: grid;
+    grid-template-areas:"I1 I2 I3 I4"
+                        "I5 I6 I7 I8"
+                        "I9 I10 I11 I12"
+                        "I13 I14 I15 I16";                 
+    gap: 2px;
+    background-color: gray;
+}
+
+.grid .one1{
+    display: flex;
+    flex-direction:column;
+}
+.grid .titles{
+    margin-left: -10px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.grid .content{
+    display: flex;
+    flex-direction: column;
+    gap:3px
+}
+.grid .content .code{
+    display: flex;
+    gap: 5px;
+}
+.grid .content p{
+    font-size: 14px;
+}
+.grid .content .code p{
+    font-size: 10px;
+}
+.grid img  {
+    margin: 10px 10px;
+    width: 20vw;
+}
+.grid iframe  {
+    width: 22vw;
+}
+.grid .one .o1{
+    grid-area: I1;
+}
+.grid .one .o2{
+    grid-area: I2;
+}
+
+.grid .one .o3{
+    grid-area: I3;
+}
+.grid .one .o4{
+    grid-area: I4;
+}
+
+.grid .one .o5{
+    grid-area: I5;
+}
+.grid .one .o6{
+    grid-area: I6;
+}
+.grid .one .o7{
+    grid-area: I7;
+}
+.grid .one .o8{
+    grid-area: I8;
+}
+.grid .one .o9{
+    grid-area: I9;
+}
+.grid .one .o10{
+    grid-area: I10;
+}
+.grid .one .o11{
+    grid-area: I11;
+}
+
+.grid .one .o12{
+    grid-area: I12;
+}
+.grid .one .o13{
+    grid-area: I13;
+}
+
+.grid .one .o14{
+    grid-area: I14;
+}
+
+.grid .one .o15{
+    grid-area: I15;
+}
+.grid .one .o16{
+    grid-area: I16;
+}
