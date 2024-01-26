@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    border: 8px solid #354654
+}
+.comp{
+    height: 90vh;
+    width: 60vw;
+    background-image: url(main.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.comp .hi p{
+    color: white;
+}
+.comp .hi{
+    margin-top: 20px;
+    font-family: math;
+}
+.hi b{
+    font-size: 30px;
+}
+.hi .full{
+    font-size: 30px;
+    
+}
+/* comp class end */
+
+
+/* work class start */
+.main .work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 20vh;
+    width: 60vw;
+    font-size: 30px;
+}
+
+.main .work b{
+    font-size: 45px;
+}
+
+/* work class end */
+
+
+/* cards class start */
+
+.cards{
+    /* height: 50vh; */
+    display: flex;
+    justify-content: center;
+    padding: 18px 43px;
+    gap: 40px;
+}
+.cards img{
+    width: 16vw;
+}
+/* cards class end here */
+
+/* info class start here */
+.main .info{
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+
+}
+.main .contact{
+    background-color: #515603;
+    color: white;
+    word-break: break-all;
+    padding: 14px 26px;
+}
+.main .about{
+    background-color: #722300;
+    color: white;
+    word-break: break-all;
+    padding: 14px 26px;
+}
+
+.main .info h3{
+    font-size: 30px;
+}
+.main .info p{
+    margin-top: 10px;
+}
+/* info class ends here */
+
+/* footer class start here */
+
+.footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 60vw;
+    height: 3vh;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 1px;
+    font-size: 29px;
+}
+
+@media screen and (max-width:814px) {
+    section{
+        width: auto;
+        height: auto;
+    }
+    .comp{
+        height: 55vh;
+    }
+    .cards img{
+        width: 33vw;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info .contact h3
+    {
+        font-size: 10px;
+    }
+    .info .about h3{
+        font-size: 10px;
+    }
+    .info p{
+        font-size: 8px;
+    }
+
+  }
