@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.box{
+    text-align: center;
+    border: 2px solid black ;
+    min-width:10% ;
+    max-height: 10%;
+}
