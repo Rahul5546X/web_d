@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-B</title>
+    <style>
+    .child{
+        border: 2px solid black;
+        padding: 20px;
+        margin: 20px;
+        background-color: aqua;
+        cursor: pointer;
+        /* color: white; */
+        font-size: larger;
+    }
+    .childContainer{  /* is it span*/
+        display: block;
+        border: 3px  solid blue;
+        margin: 20px;
+        padding: 20px;
+        background-color: beige;
+
+    }
+    .container{
+        margin: 20px;
+        border: 3px  solid red;
+        background-color: cadetblue;
+    }
+    </style>
+
+</head>
+
+<body>
+    <h2>Event Bubbling</h2>
+    <h3>Important for interviews</h3>
+    <div class="container">
+        <span class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </span>
+
+    </div>
+
+    <script src="event_b.js"></script>
+</body>
+
+</html>
