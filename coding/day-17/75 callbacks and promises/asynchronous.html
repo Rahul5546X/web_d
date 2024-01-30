@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asynchronous nature of js</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>asynchronous nature of js</h2>
+    <h3>Asynchronous functions are executed at last after the execution of the whole script</h3>
+    <p>Functions running in parallel with other functions are called asynchronous</p>
+    <p>setTimeout()</p>
+    <h2>When you pass a function as an argument, remember not to use parenthesis.</h2>
+    <p>Right: setTimeout(myFunction, 3000);</p>
+    <p>Wrong: setTimeout(myFunction(), 3000);</p>
+    <script src="asynchronous.js"></script>
+</body>
+</html>
