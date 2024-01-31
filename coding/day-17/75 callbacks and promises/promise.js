@@ -1,6 +1,4 @@
 console.log("This is Promise.........");
-
-
 // way 1 --> simple way to declare promises(without reject) Storing promise in a variable
 let prom1 = new Promise(function(resolve,reject) {
     // do an async task
@@ -14,8 +12,6 @@ let prom1 = new Promise(function(resolve,reject) {
 prom1.then(function(){
     console.log("Promise 1 is consumed");
 })
-
-
 // way 2 (one line way to declare promises)
 new Promise(function (resolve,reject) {
     setTimeout(() => {
@@ -25,8 +21,6 @@ new Promise(function (resolve,reject) {
 }).then(function(){
     console.log("Promise 2 is completed")
 })
-
-
 
 // way 3(Promise with both reduce and reject)
 let prom3 = new Promise(function(resolve,reject){
@@ -44,7 +38,6 @@ let prom3 = new Promise(function(resolve,reject){
         }, 2000);
 
 })
-
 prom3
 .then(function(val){
     console.log("Promise 3 is consumed")
@@ -53,8 +46,6 @@ prom3
 .catch(function(err){
     console.log(err);
 })
-
-
 
 
 // way 4 passing data in resolve
@@ -78,9 +69,6 @@ prom4
 {
     console.log(val);
 })
-
-
-
 // way 5 using finally -- error aaye ya na aaye it doesn't matter finally will execute in every situation
 let prom5 = new Promise(function(resolve,reject){
     // let error = true // Catch is used
@@ -97,7 +85,6 @@ let prom5 = new Promise(function(resolve,reject){
         }, 2000);
 
 })
-
 prom5
 .then(function(val){
     console.log("Promise 5 is consumed")

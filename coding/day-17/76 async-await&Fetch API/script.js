@@ -10,7 +10,6 @@ async function getdata() // async hone se e background mn chlta rhega
     })
 }
 
-
 // 1st way
 // console.log("Loading Module");
 // console.log("Do something else");

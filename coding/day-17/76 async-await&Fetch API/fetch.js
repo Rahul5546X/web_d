@@ -15,6 +15,7 @@ async function getdata()
 } 
 
 
+
 async function main()
 {
     console.log("Loading Modules");
@@ -27,6 +28,7 @@ async function main()
     console.log("task 2");
 }
 main()
+
 
 async function postData(url = "", data = {}) {
     // Default options are marked with *
