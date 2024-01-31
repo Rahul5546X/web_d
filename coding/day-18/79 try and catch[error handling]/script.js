@@ -20,6 +20,16 @@ else{
                             // handling errors
     
 
+
+
+
+
+
+
+
+
+            
+
 function main(){
     let sum = parseInt(a)+ parseInt(b);
     let x = 1;
@@ -41,7 +51,7 @@ function main(){
         console.log("finally is working")
     }
 }
-// let d = main()
+let d = main()
 
 
 

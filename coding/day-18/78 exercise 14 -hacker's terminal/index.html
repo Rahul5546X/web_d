@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking simulator</title>
+    <style>
+        body{
+            background-color: rgb(148, 232, 148);
+        } 
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid red;
+        }
+        p{
+            font-weight: bolder;
+            font-size: larger;
+        }
+        span{
+            font-weight: bolder;
+            font-size: larger;
+            animation: blink;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes blink {
+            0%{
+                color: red;
+            }
+            50%{
+                color:blue
+            }
+            100%{
+                color: yellow;
+            }  
+            }
+
+    </style>
+</head>
+<body>
+    <div class="text">
+        <!-- <p>Initializing Hacking<span> ....</span</p>
+        <p>Reading your files <span> ....</span</p>
+        <p>Password Files Detected <span> ....</span</p>
+        <p>Uploading all personal and password files to server <span> ....</span</p>
+        <p>cleaning up <span> ....</span</p> -->
+        <!-- <p>cleaning up <span class="one">.</span> <span class="two">.</span> <span class="three">.</span></p>  -->
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

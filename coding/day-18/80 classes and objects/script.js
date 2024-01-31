@@ -42,9 +42,6 @@ class Animal {
         console.log("Animals are in jungle")
     }
 }
-
-
-
 class Lion extends Animal {
     // over riding constructor
     constructor(name) {
@@ -66,7 +63,6 @@ class Lion extends Animal {
 // class doraemon extends Animal , Lion{
 //  classes can only inherit single class
 // }
-
 let rabbit = new Animal("Rabbit")
 // rabbit.eats()
 // rabbit.jumps()
