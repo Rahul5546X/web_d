@@ -12,6 +12,8 @@
 // in front end two ways to use js
 // script tag and script.js
 
+"use strict"// agr e likha ho kisi bhi file mn to jitna bhi code us file mn hoga vo sara javscript ke new version ke acc. hi chlega(default mode hi hota h isliye likhna ni pdta h but just for knowledge)
+
 alert("hello world")
 console.log("code is running...")
 console.log("code is good to go...")

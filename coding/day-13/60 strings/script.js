@@ -1,9 +1,14 @@
 let real_name = "Anamika"
 let friend = `Man"i"sha`
 
+const game_name = new String("Mini Militia") // another wy to declare strings
+console.log(game_name);  // to accesss prototype
+console.log(game_name.__proto__);  // to accesss prototype
+
 console.log("My name is "+ real_name + " and my friend name is " + friend)
 
 // itna jada na likhna ho to template literal ka use kr skte hn
+// always use this template instead of using plus to concatenate the string
 
 console.log(`My name is ${real_name} and my friends name is ${friend}`)
 
@@ -21,3 +26,4 @@ console.log(real_name.concat(friend,"Shruti"))
 
 
 
+//*****************numbers */

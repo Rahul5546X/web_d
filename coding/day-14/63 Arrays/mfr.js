@@ -9,12 +9,24 @@ let arr = [1,13,5,7,11]
 // }
 // console.log(newarr)
 
+
+
+
+
+
+
+
 // Maps 
 // sbse asan trika  (used mostly)
 let newarr1 = arr.map( (e  , index , array) => {  // e is element
     return e**2;
 })
 console.log(newarr1)
+
+
+
+
+
 
 // filters -- as it's name suggests  (used mostly)
 const greaterThanSeven = (e)=> {
@@ -24,6 +36,9 @@ const greaterThanSeven = (e)=> {
     return false
 }
 console.log(arr.filter(greaterThanSeven))
+
+
+
 
 
 // reduce method

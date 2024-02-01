@@ -8,8 +8,10 @@ console.log("In this video we will learn about variables in javascript")
 // It is case-sensitive
 var a = 5;
 var b = 6;
+c = 5;// valid but not recommended
 // let 2a = 7;  //not allowed
 
+let d;// undefined 
 // always use let while declaring the variables
 console.log(typeof(a),typeof(b))
 console.log(a+b)
@@ -35,3 +37,22 @@ let o={
 o.salary = "100cr";
 console.log(o)
 
+
+
+
+// Primitive DataTypes-- called by value and changes are made in the copy ---------stack memory(copy)
+// number(int,flloat sb isimn aata h)
+// bigint
+// string
+// boolean
+// null  let temp = null standalone value
+// undefined
+// symbol (react) used for uniqueness-->kisi value ko unqiue bnane ke lie
+
+// non_primitive -- called by Reference(return type function(object function)) -------heap memory(reference)
+
+// object
+// array
+// functions
+
+// 
