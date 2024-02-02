@@ -1,0 +1,66 @@
+/* these 4 are utility classes */
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.bg-black{
+    background-color:black ;
+}
+
+.bg-grey{ /*home and library*/
+    color: #fff;
+    background-color:  #121212;;
+}
+
+.invert{ /* white krne ke lie image*/
+    filter: invert(1);
+}
+
+.rounded{
+    border-radius: 7px ;
+}
+
+.m-1{
+margin: 5px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+
+/* chatgpt coded */
+
+/* For WebKit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; /* Set the color for the thumb (the draggable part) */
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #222; /* Set the color for the track (the non-draggable part) */
+  }
+  
+  /* For Firefox */
+  /* Note: Firefox currently only supports styling the scrollbar color, not the width or other properties */
+  /* You can use scrollbar-color property for Firefox */
+  
+  /* Example for Firefox */
+  /* body {
+    scrollbar-color: #333 #222;
+  } */
+  
