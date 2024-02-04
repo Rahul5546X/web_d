@@ -9,6 +9,7 @@ async function sleep()
 
 // let a = await sleep() // give error
 // let b = await sleep()
+
 // now if I wanna use this I'll have to declare a async function but if I do no want to do that we can use IIFE 
 
 
