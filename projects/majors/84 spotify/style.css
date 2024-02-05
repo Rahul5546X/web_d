@@ -246,7 +246,7 @@ body {
 
 .card img {
     /* width: 100%; */ 
-    width: 204px;
+    width: 190px;
     height: 132px;
     object-fit: cover;
 }
@@ -394,6 +394,9 @@ body {
     .spotify-playlist .card {
         width: 44vw;
     }
+    .card img{
+        width: 40vw;
+    }
 
     .name-time {
         /* above bar*/
@@ -421,6 +424,9 @@ body {
 @media (max-width:300px) {
     .spotify-playlist .card {
         width: 60vw;
+    }
+    .card img{
+        width: 50vw;
     }
 
     .right .spotify-playlist .playbar {

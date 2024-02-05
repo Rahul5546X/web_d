@@ -165,7 +165,7 @@ async function main() {
     play.addEventListener("click", async () => {
         try {
             if (currentSong.paused) {
-                await playMusic(songs[0]); // Ensure playMusic completes before playing
+                // await playMusic(songs[0]); // Ensure playMusic completes before playing
                 currentSong.play();
                 play.src = "svg/pause.svg";
             } else {
