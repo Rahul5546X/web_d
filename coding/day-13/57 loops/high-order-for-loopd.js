@@ -110,7 +110,52 @@ for (const key in arr2) {
 
 // **************************************for-each**************************************(added in direct properties of array)it is higher order
 
-let arr3 = [2,3,4,5,6,5]
-arr3.forEach(element => {
-    console.log(element);
+// let arr3 = [2,3,4,5,6,5]
+// arr3.forEach(element => {
+//     console.log(element);
+// });
+
+let arr4 = [2,3,4,5,6,5]
+arr4.forEach(printme);  // fo not call the function here just give a reference
+
+function printme(item){
+    // console.log(item);
+}
+
+
+
+const coding = ['ruby', 'python','javascript','cpp','c','swift']
+coding.forEach((element,index,arr) => {  // e sb parameter hote hn iskee pass(callback function)
+    // console.log(element,index,arr);
 });
+
+// array of object se values nikalna
+const shoppingcart = [
+    {
+        itemname: "js course",
+        price: 1200
+    },
+    {
+        itemname: "data-scientist",
+        price: 1400
+    },
+    {
+        itemname: "sigmaWebD",
+        price: 1600
+    },
+    {
+        itemname: "python",
+        price: 1800
+    },
+    {
+        itemname: "C/c++",
+        price: 1600
+    }
+]
+
+shoppingcart.forEach((item)=>
+{
+    console.log(item);
+    console.log(item.price);
+    console.log(item.itemname);
+})

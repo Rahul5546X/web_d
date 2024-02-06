@@ -60,8 +60,8 @@ async function getSongs(folder) {
         }
     }
 
-        // attach an event listener to every song
-        Array.from(document.querySelector(".song-list").getElementsByTagName("li"))
+    // attach an event listener to every song
+    Array.from(document.querySelector(".song-list").getElementsByTagName("li"))
         .forEach(e => {
             // we'll get all the name of the song
             e.addEventListener("click", element => {
@@ -94,22 +94,22 @@ async function displayAlbums() {
     let response = await a.text(); // now we have to parse it
     let div = document.createElement("div")
     div.innerHTML = response;
-    console.log(div);
+    // console.log(div);
     let anchors = div.getElementsByTagName('a')
-    console.log(anchors);
+    // console.log(anchors);
 
     let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
 
-        if ((e.href.includes("/songs")) && (!e.href.includes(".htaccess")) ){
+        if ((e.href.includes("/songs")) && (!e.href.includes(".htaccess"))) {
             // console.log(e.href.split("/").slice(-2)[0]);
             let folder = e.href.split("/").slice(-2)[0];
 
             //get meta data of folder
             let a = await fetch(`/projects/majors/84%20spotify/songs/${folder}/info.json`)
             let response = await a.json();
-            console.log(response);
+            // console.log(response);
             document.querySelector(".card-container").innerHTML = document.querySelector(".card-container").innerHTML +
                 `<div data-folder = "${folder}" class="card ">
             <div class="play">
@@ -126,11 +126,11 @@ async function displayAlbums() {
         </div>`
         }
     }
-    
+
 
     // addig libraries dynamically play cards(load the playlist)
     Array.from(document.getElementsByClassName("card")).forEach(e => {
-        console.log(e);
+        // console.log(e);
         e.addEventListener("click", async item => {
             songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`)
             playMusic(songs[0])
@@ -143,7 +143,7 @@ async function displayAlbums() {
 
 async function main() {
     //get the list of the songs
-    await getSongs("songs/arijit"); // it'll decide which playlist will load when we open of refresh the website
+    await getSongs("songs/im-dragons"); // it'll decide which playlist will load when we open of refresh the website
     // playing a song when we click on the play button 1st time
     playMusic(songs[0], true);
 
@@ -197,12 +197,10 @@ async function main() {
 
         document.querySelector(".song-duration").innerHTML = `${formatTime(currentSong.currentTime)} / ${formatTime(currentSong.duration)}`
 
-
         // for seekbar circle
         document.querySelector(".circle").style.left = (currentSong.currentTime / currentSong.duration) * 99 + "%"
 
     });
-
 
 
     //to enable changing the song time(add an event listener to seekbar)
@@ -230,7 +228,7 @@ async function main() {
 
     // add an event to volume range
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
-        console.log("change", e, e.target, e.target.value);
+        // console.log("change", e, e.target, e.target.value);
         currentSong.volume = parseInt(e.target.value) / 100  //because volume range is from 0 to 1
     })
 
@@ -254,8 +252,47 @@ async function main() {
     })
 
 
-}
+    
+    currentSong.addEventListener("timeupdate", () => {
+    let crntTime = formatTime(currentSong.currentTime)
+    let durationOfSong = formatTime(currentSong.duration)
+    // for checking the working
+    // console.log(crntTime);
+    // console.log(typeof crntTime);
+    // console.log(durationOfSong);
+    if((crntTime!="00:00")&&(crntTime == durationOfSong)){
+    {
+        console.log("inside if statement");
+        let index = songs.indexOf(decodeURI(currentSong.src.split("/").slice(-1)[0])) // check url acc. to your path of the songs
+        if ((index + 1) < songs.length) {
+            console.log("inside play music");
+            playMusic(songs[index + 1])
+        }
+        else{
+            playMusic(songs[index])
+        }
+    }
+    }
+    })
 
+    // Function to play the next song
+    // function playNextSong() {
+    //     let index = songs.indexOf(decodeURI(currentSong.src.split("/").slice(-1)[0]));
+    //     if ((index + 1) < songs.length) {
+    //         playMusic(songs[index + 1]);
+    //     }
+        // else{
+        //     playMusic(songs[index])
+        // }
+    // }
+    // // Event listener to check if the current song has ended
+    // currentSong.addEventListener('ended', function () {
+    //     playNextSong();
+    // });
+
+    
+
+}
 main()
 
 

@@ -213,7 +213,12 @@ body {
     position: relative;
     transition: all 1s ease-out;
 }
-
+.card img {
+    /* width: 100%; */ 
+    width: 190px;
+    height: 132px;
+    object-fit: cover;
+}
 .card:hover{
     cursor: pointer;
     background-color: rgb(105, 103, 103);
@@ -235,26 +240,16 @@ body {
     border-radius: 50%;
     opacity: var(--a);
     transition: all 1s ease-out;
-
 }
-
-
 .svg {
     height: 17px;
     width: 40px;
 }
 
-.card img {
-    /* width: 100%; */ 
-    width: 190px;
-    height: 132px;
-    object-fit: cover;
-}
+
 
 
 /*  card end */
-
-
 
 /* playbar start */
 .right .spotify-playlist .playbar {
