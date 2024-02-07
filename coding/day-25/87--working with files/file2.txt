@@ -1,0 +1,1 @@
+this is file 2 maded using writeFile. It is created ASYNCHRONOUSLYmujhe append kra hua h mujhe append kra hua h 

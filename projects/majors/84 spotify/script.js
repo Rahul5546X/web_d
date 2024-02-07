@@ -275,6 +275,17 @@ async function main() {
     }
     })
 
+
+
+
+
+
+
+
+
+
+    
+
     // Function to play the next song
     // function playNextSong() {
     //     let index = songs.indexOf(decodeURI(currentSong.src.split("/").slice(-1)[0]));
