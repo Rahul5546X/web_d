@@ -1,0 +1,17 @@
+.container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+  }
+  
+  .box {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(177, 177, 62);
+  }
+
+body{
+    background-color: black;
+}
