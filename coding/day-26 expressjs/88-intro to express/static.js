@@ -29,7 +29,7 @@ app.get('/shopping', (req, res) => {
 app.get('/blog', (req, res) => {  
     res.send('Welcome to blog side')
   })
-  
+    
 
 app.get('/blog/:slug', (req, res) => {   //slug is parameter here
     

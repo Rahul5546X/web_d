@@ -27,6 +27,8 @@ const port = 3000 // choosing a port
 
 
 // ************************************************program for making a blog
+
+
 app.get('/', (req, res) => {  
     res.send('Hello World!')
   })
@@ -45,7 +47,8 @@ app.get('/shopping', (req, res) => {
 app.get('/blog', (req, res) => {  
     res.send('Welcome to blog side')
   })
-  
+
+
   // app.get('/blog/intro-to-backend', (req, res) => {  
       //     res.send('Welcome to intro to backend')
       //   })
@@ -57,6 +60,7 @@ app.get('/blog', (req, res) => {
           // we do not need to do this all manually so we can easily do this using simple method in express
           
 // in slugs we can write parameters(variables like slug jo bnaya h hmne) and get queries(?krke lga skte hn url mn)
+
 
 app.get('/blog/:slug', (req, res) => {   //slug is parameter here
     // console.log(req);
