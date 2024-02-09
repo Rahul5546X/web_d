@@ -58,7 +58,6 @@ app.get('/blog', (req, res) => {
           
 // in slugs we can write parameters(variables like slug jo bnaya h hmne) and get queries(?krke lga skte hn url mn)
 
-
 app.get('/blog/:slug', (req, res) => {   //slug is parameter here
     // console.log(req);
 
@@ -74,7 +73,6 @@ app.get('/blog/:slug', (req, res) => {   //slug is parameter here
 // app.get('/blog/:slug/:second', (req, res) => {   //slug is parameter here
 //     res.send(`Welcome to ${req.params.slug} and ${req.params.second}`) //req.params give us a object
 //   })
-  
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
