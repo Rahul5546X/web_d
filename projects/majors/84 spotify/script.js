@@ -275,34 +275,6 @@ async function main() {
     }
     })
 
-
-
-
-
-
-
-
-
-
-    
-
-    // Function to play the next song
-    // function playNextSong() {
-    //     let index = songs.indexOf(decodeURI(currentSong.src.split("/").slice(-1)[0]));
-    //     if ((index + 1) < songs.length) {
-    //         playMusic(songs[index + 1]);
-    //     }
-        // else{
-        //     playMusic(songs[index])
-        // }
-    // }
-    // // Event listener to check if the current song has ended
-    // currentSong.addEventListener('ended', function () {
-    //     playNextSong();
-    // });
-
-    
-
 }
 main()
 

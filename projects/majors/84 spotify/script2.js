@@ -1,4 +1,4 @@
-console.log("Ho jaye fir kuch javascript ka jaduu")
+// console.log("Ho jaye fir kuch javascript ka jaduu")
 
 let currentSong = new Audio; // taki ek time pr ek hi gaana chle
 let songs;
@@ -82,7 +82,6 @@ const playMusic = (track, pause = false) => {
         currentSong.play();
         play.src = "svg/pause.svg"
     }
-
     // adding the name and duration of the song 
     document.querySelector(".song-info").innerHTML = decodeURI(track)
     document.querySelector(".song-duration").innerHTML = "00:00/00:00 "
@@ -97,9 +96,9 @@ async function displayAlbums() {
     let response = await a.text(); // now we have to parse it
     let div = document.createElement("div")
     div.innerHTML = response;
-    console.log(div);
+    // console.log(div);
     let anchors = div.getElementsByTagName('a')
-    console.log(anchors);
+    // console.log(anchors);
 
     let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
@@ -112,7 +111,7 @@ async function displayAlbums() {
             //get meta data of folder
             let a = await fetch(`/songs/${folder}/info.json`)
             let response = await a.json();
-            console.log(response);
+            // console.log(response);
             document.querySelector(".card-container").innerHTML = document.querySelector(".card-container").innerHTML +
                 `<div data-folder = "${folder}" class="card ">
             <div class="play">
@@ -133,7 +132,7 @@ async function displayAlbums() {
 
     // addig libraries dynamically play cards(load the playlist)
     Array.from(document.getElementsByClassName("card")).forEach(e => {
-        console.log(e);
+        // console.log(e);
         e.addEventListener("click", async item => {
             console.log("inside event listener of card");
             songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`)
@@ -144,9 +143,6 @@ async function displayAlbums() {
     })
 }
 
-
-
-
 async function main() {
     //get the list of the songs
     await getSongs("songs/arijit"); // it'll decide which playlist will load when we open of refresh the website
@@ -156,10 +152,6 @@ async function main() {
     //display all the albums on the page
 
     displayAlbums();
-
-
-
-
     //attach an event listener to play,next and previous
     // changing the play and pause
     play.addEventListener("click", async () => {
@@ -200,19 +192,6 @@ async function main() {
         }
     })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     // listen for time update event
     currentSong.addEventListener("timeupdate", () => {
         // console.log(currentSong.currentTime, currentSong.duration) //just for checking purposes
@@ -224,7 +203,6 @@ async function main() {
         document.querySelector(".circle").style.left = (currentSong.currentTime / currentSong.duration) * 99 + "%"
 
     });
-
 
 
     //to enable changing the song time(add an event listener to seekbar)
@@ -275,9 +253,32 @@ async function main() {
         }
     })
 
+        
+    currentSong.addEventListener("timeupdate", () => {
+        let crntTime = formatTime(currentSong.currentTime)
+        let durationOfSong = formatTime(currentSong.duration)
+
+        // for checking the working
+        // console.log(crntTime);
+        // console.log(durationOfSong);
+
+        if((crntTime!="00:00")&&(crntTime == durationOfSong)){
+        {
+            console.log("inside if statement");
+            let index = songs.indexOf((currentSong.src.split("/").slice(-1)[0])) // check url acc. to your path of the songs
+            if ((index + 1) < songs.length) {
+                console.log("inside play music");
+                playMusic(songs[index + 1])
+            }
+            else{
+                playMusic(songs[index])
+            }
+        }
+        }
+        })
+    
 
 }
-
 main()
 
 
