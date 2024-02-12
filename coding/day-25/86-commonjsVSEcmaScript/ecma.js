@@ -2,7 +2,7 @@
 
 // e sb krne ke lie package mn type module hona chaiye
 // importing named exports   
-// these are imported asynchronously so we can directly use await in them
+// these are imported asynchronously so we can directly use await in themno
 import {a,b,d} from "./ecmaP.js"   // jo name h usise export krna pdega
 console.log(a)
 console.log(b)
