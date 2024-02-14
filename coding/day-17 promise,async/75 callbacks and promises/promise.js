@@ -1,4 +1,16 @@
+// what are promises--> it is an object which represent a eventual completion or failure of an asynchronous opration and it's resulting value.
+//jo task dia h vo abhi ke abhi process nhi hoga (vo queue mn lg jayega pr execute bad mn hoga to agr vo complete hua ya nhi ye hmn  promise btata h(isliye chahe async await lgao ya promises lga lo) )
+
+
+// three states of promises
+// pending 
+// fulfiilled
+// rejected
+
+// in most of staes we'll just consume the promises(but we also delcare or make promises some time)
 console.log("This is Promise.........");
+
+
 // way 1 --> simple way to declare promises(without reject) Storing promise in a variable
 let prom1 = new Promise(function(resolve,reject) {
     // do an async task
@@ -9,9 +21,11 @@ let prom1 = new Promise(function(resolve,reject) {
     
     // ab e execute ho jayega to resolve bhejna pdega taki pta lg jaye ki e chl chuka h
 })
-prom1.then(function(){
+prom1.then(function(){ //consuming the promises ,it connects with resolve
     console.log("Promise 1 is consumed");
 })
+
+
 // way 2 (one line way to declare promises)
 new Promise(function (resolve,reject) {
     setTimeout(() => {
@@ -22,7 +36,7 @@ new Promise(function (resolve,reject) {
     console.log("Promise 2 is completed")
 })
 
-// way 3(Promise with both reduce and reject)
+// way 3(Promise with both resolve and reject)
 let prom3 = new Promise(function(resolve,reject){
     // let error = true // Catch is used
     let error = false // catch will not be used
@@ -69,6 +83,8 @@ prom4
 {
     console.log(val);
 })
+
+
 // way 5 using finally -- error aaye ya na aaye it doesn't matter finally will execute in every situation
 let prom5 = new Promise(function(resolve,reject){
     // let error = true // Catch is used
@@ -98,6 +114,7 @@ prom5
 })
 
 
+
 let prom6 = new Promise(function(resolve,reject){
     setTimeout(() => {
         // let error = true
@@ -113,10 +130,10 @@ let prom6 = new Promise(function(resolve,reject){
 })
 
 // Handling with async and await
-// in this we can not handle catch gracefully
+// in this we can not handle catch gracefully(so always use try ana catch block to handle errors)
 async function handlePromiseSix(){
     try{
-        let respone = await prom6
+        let respone = await prom6  // is is an object we do not use prom6 ()
         console.log(respone)
     }
     catch(err){
@@ -128,6 +145,11 @@ async function handlePromiseSix(){
     }
 }
 handlePromiseSix()
+
+
+
+
+
 
 // Some promise api check notes for more
 Promise.allSettled([prom1, prom3, prom4, prom5, prom6])
