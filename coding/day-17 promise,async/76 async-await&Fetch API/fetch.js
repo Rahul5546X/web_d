@@ -1,3 +1,8 @@
+// fetch method start the process of fetching a resource from network, returning a promise which s fullfilled once the response is available.
+
+//404 in promise will be in resolve not in reject
+
+
 // fetch('https://jsonplaceholder.typicode.com/todos/1')
 //       .then(response => response.json())
 //       .then(json => console.log(json))
@@ -27,18 +32,19 @@ async function main()
 }
 main()
 
-async function postData(url = "", data = {}) {
-    // Default options are marked with *
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data), 
-    });
-    return response.json();
-  }
+
+// async function postData(url = "", data = {}) {
+//     // Default options are marked with *
+//     const response = await fetch(url, {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify(data), 
+//     });
+//     return response.json();
+//   }
   
-  postData("https://example.com/answer", { answer: 42 }).then((data) => {
-    console.log(data); 
-  });
+//   postData("https://example.com/answer", { answer: 42 }).then((data) => {
+//     console.log(data); 
+//   });
