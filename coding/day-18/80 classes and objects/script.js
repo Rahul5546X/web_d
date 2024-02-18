@@ -1,12 +1,13 @@
 console.log("script is initializing...");
 
 
-
-// prototype
+//object - collection of properties(variables) and methods(functions)
+// prototype (object literal-->literally ek object bnanana)
 let obj = {
     a: 1,
     b: "JavaScript"
 }
+
 
 console.log(obj);  // prototype are not it's personal properties or method they are additional functions
 // (prototype is also an object which has many functions)
@@ -25,7 +26,11 @@ console.log(obj2.a);// there is no a in obj2 but it'll still work because a is d
 
 
 
-//  **********************classes and objects*************************
+//why we use oop(code mess up ho rha tha -->sphagetti code)
+// parts--> object literal
+
+//  **********************classes and objects*************************(technically there are no classes in js,it is a prototype based language)(feature is added in ES-6)
+// classes are just syntactical sugar
 class Animal {
     constructor(name) {
         this.name = name
@@ -63,7 +68,8 @@ class Lion extends Animal {
 // class doraemon extends Animal , Lion{
 //  classes can only inherit single class
 // }
-let rabbit = new Animal("Rabbit")
+let rabbit = new Animal("Rabbit")   //new is constructor function(nya context bnane ke lie use hota h)(ek nya object create hota h,then constructor function call hota h, this. krke jo sb likha hota h uske andr pass on hota h, fir hmn values mil jati h)
+
 // rabbit.eats()
 // rabbit.jumps()
 // rabbit.sjungle() //script.js:50 Uncaught TypeError: rabbit.sjungle is not a function
