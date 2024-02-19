@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dummy Data Generator</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <button id="saveButton" class="btn">Save Data</button>
+  <script>
+      document.getElementById('saveButton').addEventListener('click', function() {
+        fetch('http://localhost:3000/save', {
+            method: 'POST'
+          })
+          // to interact with user about response of the request
+          .then(function(response) {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            const contentType = response.headers.get('content-type');
+            if (contentType && contentType.includes('application/json')) {
+                return response.json(); // Parse JSON response
+            } else {
+                return response.text(); // Parse non-JSON response
+            }
+          })
+          .then(function(data) {
+            alert('Data saved successfully!');
+          })
+          .catch(function(error) {
+            alert('Error saving data: ' + error.message);
+          });
+      });
+  </script>
+</body>
+
+</html>
+
+
+<!-- // $(document).ready(function() {
+    //     $('#saveButton').click(function() {
+    //         $.ajax({
+    //             type: 'POST',
+    //             url: 'http://localhost:3000/save',
+    //             success: function(response) {
+    //                 alert('Data saved successfully!');
+    //             },
+    //             error: function(xhr, status, error) {
+    //                 alert('Error saving data: ' + error);
+    //             }
+    //         });
+    //     });
+    // }); -->
