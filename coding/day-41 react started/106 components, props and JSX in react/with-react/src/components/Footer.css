@@ -1,0 +1,8 @@
+.txt{
+    position: fixed;
+    bottom: 0;
+}
+.Footer{
+    display: flex;
+    justify-content: center;
+}
