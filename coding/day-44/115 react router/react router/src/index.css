@@ -1,0 +1,50 @@
+ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  background-color: rgb(74, 72, 72);
+  padding: 10px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  /* border: 2px solid black; */
+}
+
+.heh {
+  text-align: center;
+}
+
+.hohoh {
+  margin-top: 10px;
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.home {
+  background-color: blueviolet;
+  color: white;
+}
+
+.about{
+  background-color: brown;
+  color: white;
+}
+.login{
+  background-color: cyan;
+  color: black;
+}
+.user{
+  background-color: aquamarine;
+  color:red
+}
+
+
