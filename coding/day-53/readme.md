@@ -1,0 +1,1 @@
+### again didn't got time to learn new things so just revised some concepts 
