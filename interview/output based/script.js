@@ -65,3 +65,21 @@ console.log(user1 == user2); // true inko equal kr dia h upr so reference same h
 [1,2] == [1,2] // false type is object and reference is compared not value
 
 "ab" == "ab" // true type is string so values are compared not refernce
+
+
+
+// question 4
+console.log("4")
+const user3 = {
+    name: 'john',
+    age: 25,
+    address: {
+        city: "mumbai",
+        state: "Maharastra"
+    }
+}
+
+Object.freeze(user3.age)
+user3.name = "rahul"
+user3.age= "10"
+console.log(user3)
