@@ -9,7 +9,6 @@ tinderUser.isLoggedIn = false
 console.log(tinderUser); 
 
 
-
 console.log(Object.keys(tinderUser)); // array datatype so we can use array properties on it by storing it in a variable or arrays
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));  // every key value ko array mn bna dia jata h

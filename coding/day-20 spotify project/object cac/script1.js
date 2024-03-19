@@ -19,7 +19,6 @@ const Jsuser = {name:"Rahul",
                 // mySymbol:"my key 1", // it is used like a string
                 [mySymbol]:"my key 1", // it'll used like a symbol print the whole object to check the difference between these two
                 // jb symbol hoga to sbse last mn print hoga e
-
                 number: 98983984,
                 location: "india",
                 isLoggedIn: false
@@ -30,7 +29,7 @@ const Jsuser = {name:"Rahul",
 console.log(Jsuser.name); // work but not a good way, with this method we can not access the FULL NAME
 
 
-// console.log(Jsuser.FULL NAME);KHUD vs code ise niche vale trike mn change kr dega
+// console.log(Jsuser.FULL NAME);KHUD vs code ise niche vale trike mn change kr dega qnki esee ni ho payega e
 
 console.log(Jsuser["name"]); // access krte time string ki trh krna pdega
 
@@ -61,12 +60,10 @@ Jsuser.greeting2 = function()
     console.log(`Hello Js user  ${this.name}` ) ; // jo name iske scope mn dia h vhi le lega e
 }
 
-console.log(Jsuser.greeting); // it'll give Function return back
+console.log(Jsuser.greeting); // it'll give 
+// Function {anonymous}
 console.log(Jsuser.greeting());  // work
 console.log(Jsuser.greeting2());  // work
-
-
-
 
 
 // if we want something to not get changes

@@ -12,12 +12,14 @@ function sum(a =1 ,b = 2) {
 
 // console.log("the sum of 3 and 5 is "+ sum(3,5))
 sum // this is reference
-sum(3,5); // this is exercution
+sum(3,5); // this is execution
 
 
 // sum(); //default value/parameter will be used ,if there is no default value then result will be undefined
 
 ""
+
+
 // arrow function
 
 const func1 = (x)=>{
@@ -62,10 +64,10 @@ console.log(gamer(user));
 //     laptop:"asus rog strix",
 //     ram:"16gb"
 // }));
+ 
 
 
-
-// hoisting bgera ka cocept h e
+                // hoisting bgera ka cocept h e
 // function addone(num)
 // {
 //     return num+1
@@ -81,14 +83,14 @@ console.log(gamer(user));
 // console.log(addtwo(5));
 
 
-console.log(addone(5));  // will work
+console.log(addone(5));  // will work  hoisting
 function addone(num)
 {
     return num+1
 }
 
 
-console.log(addtwo(5)); // will not work
+console.log(addtwo(5)); // will not work variable h qnki 
 const addtwo = function(num) // variable can hold
 {
     return num+2

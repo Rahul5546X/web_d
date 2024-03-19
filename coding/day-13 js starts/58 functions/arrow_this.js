@@ -1,14 +1,12 @@
 // This and arrow function cac
 
-
-
 // this-- tells about the current context(it is a global object)
 const user= {
     username:"Rahul",
     age:20,
     price:999,
     welcome:function () {
-        console.log(`Hey ${this.username} Welcome to the website`);// if we do not user this we can not access the username
+        console.log(`Hey ${this.username} Welcome to the website`);// if we do not use this we can not access the username
         console.log(this);
     }  
 }
@@ -65,7 +63,9 @@ const user= {
 // 2. Implicit return
 // const addTwo = (num1, num2)=> num1+num2   // way 1  curly braces use kroge to return likhna hi pdega
 const addTwo = (num1, num2)=> (num1+num2)   // way 2 
-// const addTwo = (num1, num2)=> ({username:"rahul"})   // way 2 suppose if we are returning a object so it is good to  use paranthesis
+// const addTwo = (num1, num2)=> ({username:"rahul"})   
+
+// way 2 suppose if we are returning a object so it is good to  use paranthesis
 console.log(addTwo(2,3));
 
 
@@ -77,7 +77,6 @@ console.log(addTwo(2,3));
 // Normal function
 function regularFunction() {  //In normal functions, the this keyword is dynamically scoped. Its value is determined by how the function is called.
     this.value = 1;
-  
     setTimeout(function () {
       this.value++;
       console.log("Inside regularFunction:", this.value);

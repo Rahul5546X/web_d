@@ -81,9 +81,10 @@ number:"9867"}) // Array.of
 
 console.log(a6.keys());
 
-
-
-
 //slice does not include the last range and does not manipulate the original array
 // splice works same as slice but it includes the last range and manipulate the original array(jo chizn splice kri hongi vo bahr hi ho jayengi original array se)
 
+let z1= 100
+let z2= 300
+let z3= 400
+console.log(Array.of(z2,z1,z3))

@@ -12,8 +12,6 @@
 // });
 
 
-
-
 // for-in (works on object give the keys of the objects and index(keys) of the array,does not work on map)
 // for (const key in myobj2) { //(work on myobj2)
 //     if (myobj2.hasOwnProperty.call(myobj2, key)) {
