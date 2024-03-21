@@ -45,12 +45,16 @@ for (const greet of greetings) {
 
 
 //Maps
-const map = new Map() //map is an myobj2 . it holds key valye pair, it remember the order of keys as they are inserted while myobj2 does not hold the order
+const map = new Map() 
+//map is an myobj2 . it holds key valye pair, it remember the order of keys as they are inserted while myobj2 does not hold the order
+
 // it has no duplicate values , it is also not iterable so for-in does not work on it 
 map.set("state", "himachal")
 map.set("country", "india")
 map.set("pin-code", "175049")
-map.set("state", "uttrakhand") // does not have duplicate values so 2nd entry will overwrite the 1st one
+map.set("state", "uttrakhand") 
+
+// does not have duplicate values so 2nd entry will overwrite the 1st one
 
 
 // console.log(map);
@@ -58,7 +62,7 @@ map.set("state", "uttrakhand") // does not have duplicate values so 2nd entry wi
 // console.log(map.get("state"));
 
 
-// for (const [key,values] of map) {  // sirf key lgenge to sara map hi print ho jayega . it is called destructuring
+// for (const [key,values] of map) {  // sirf key lenge to sara map hi print ho jayega . it is called destructuring
 //     console.log(key,'-->',values);
 // }
 

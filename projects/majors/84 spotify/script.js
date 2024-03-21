@@ -139,8 +139,6 @@ async function displayAlbums() {
 }
 
 
-
-
 async function main() {
     //get the list of the songs
     await getSongs("songs/im-dragons"); // it'll decide which playlist will load when we open of refresh the website
@@ -150,9 +148,6 @@ async function main() {
     //display all the albums on the page
 
     displayAlbums();
-
-
-
 
     //attach an event listener to play,next and previous
     // changing the play and pause
@@ -250,9 +245,7 @@ async function main() {
 
         }
     })
-
-
-    
+ 
     currentSong.addEventListener("timeupdate", () => {
     let crntTime = formatTime(currentSong.currentTime)
     let durationOfSong = formatTime(currentSong.duration)

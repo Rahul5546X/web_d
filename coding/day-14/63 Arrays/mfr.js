@@ -43,6 +43,10 @@ const red = (a, b) => {
 }
 // console.log(arr2.reduce(red))  
 
+
+
+
+
 // reduce cac
 const mynums1 = [1, 2, 3]
 const mytotal = mynums1.reduce((acc, currVal) => {      // acc= accumualator
