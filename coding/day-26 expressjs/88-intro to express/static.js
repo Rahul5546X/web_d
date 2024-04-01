@@ -6,7 +6,7 @@ const port = 3000 // choosing a port(5000 is also an option)
 
 
 
-app.use(express.static('public')) // use this to serve static files(uahan vhi name dalna folder ka jisko app public krna chahte ho)
+app.use(express.static('public')) // use this to serve static files(yahan vhi name dalna folder ka jisko app public krna chahte ho)
 // app.use is used to access middleware and express.static is built in middleware that makes the folder (generally name public) public
 
 
