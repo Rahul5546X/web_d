@@ -1,0 +1,1 @@
+thinking of creating the header and footer of the website
