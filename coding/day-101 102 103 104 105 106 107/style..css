@@ -1,0 +1,227 @@
+/* File name : style.css
+   Description: This file contains main styling of the grow website.
+   Author: The IRON Network
+*/
+
+body {
+    font-family: "Manrope";
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #66676b;
+  }
+  
+  .sidebar__main__wrapper{
+    display: flex;
+  }
+  
+  .sidebar{
+    width: 15%;
+    position: relative;
+    /* / height: 100vh; / */
+  }
+  
+  .sidebar__wrapper{
+    /* / border: 1px solid red; / */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .sidebar__logo {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar__logo a{
+    padding: 0px 30px 0px 30px;
+  }
+  
+  .sidebar__logo , .sidebar__booking__button{
+    padding: 10px 14px;
+    border-bottom: 1px solid #e6e8ec;
+  }
+  
+  .sidebar__booking__button button{
+    color: white;
+    font-size: 16px;
+    background-color: #2b65f0;
+    padding: 17px 61px;
+    font-weight: 700;
+    border-radius: 6px;
+  }
+  
+  /* / sidebar menu / */
+  
+  .sidebar__menu__wrapper{
+    padding-top: 30px;
+  }
+  
+  .sidebar__menu__wrapper .sidebar__menu__list>li{
+    margin-bottom: 30px;
+  }
+  
+  .sidebar__menu__wrapper .sidebar__menu__list>li>a
+  {
+      transition: 0.5s ease;
+      color: #66676b;
+      font-size: 17px;
+      font-weight: 600;
+      display: block;
+      padding: 10px 40px 10px 0px;
+  }
+  
+  .sidebar__menu__wrapper .sidebar__menu__list li:hover a{
+    color: black;
+  }
+  
+  .sidebar__menu__wrapper .sidebar__menu__list>li>a>span{
+    padding-left: 20px;
+    padding-right: 70px;
+  }
+  
+  .sidebar__menu__wrapper .sidebar__menu__list{
+    position: relative;
+  }
+  
+  .sidebar__menu__wrapper .sidebar__menu__list .sidebar__submenu__dropdown .sidebar__submenu__list
+  {
+    /* margin-top: -350px; */
+    height: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s ease;
+  }
+  
+  .sidebar__menu__wrapper .sidebar__menu__list .sidebar__submenu__dropdown:hover .sidebar__submenu__list{
+    height: auto;
+    margin-top: 20px;
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .sidebar__menu__wrapper .sidebar__menu__list .sidebar__submenu__dropdown:hover{
+     margin-bottom: 400px;
+  }
+  
+  .sidebar__menu__wrapper .sidebar__menu__list .sidebar__submenu__dropdown  .sidebar__submenu__list>li>a {
+    display: block;
+    text-decoration: none;
+    color: #66676b;
+    padding:30px 85px 10px 35px;;
+    transition: 0.5s ease;
+  }
+  
+  .sidebar__menu__wrapper .sidebar__menu__list .sidebar__submenu__dropdown .sidebar__submenu__list li:hover a{
+    color:black
+  }
+  
+  .sidebar .icon{
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: -12px;
+    padding: 5px 5px;
+    color: #5e8af3;
+    box-shadow: 2px 2px 9px whitesmoke;
+    border: 1px solid #c5c5c5;
+  }
+  
+  /* / sidebar ends / */
+  .main{
+    width: 85%;
+    background-color: #f0f5f9;
+    height: 100vh;
+    border: 1px solid red;
+  }
+  
+  .main__wrapper{
+    width: 95%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+  }
+  
+  .header__wrapper{
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header__search__bar{
+    position: relative; 
+    width: 55%;
+  }
+
+  .header__search__bar input{
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #c9c6c6;
+    border-radius: 5px;
+  }
+  
+  .header__search__icon{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  
+  .header__icons{
+    display: flex;
+    gap: 30px;
+  }
+
+  .header__icons i{
+    position: relative;
+  }
+
+  .header__icons .line::after{
+    content: "";
+    position: absolute;
+    background-color: grey;
+    height: 20px;
+    border: 1px solid black;
+    width: 1px;
+    left: 30px;
+  }
+
+  .header__user__profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+ 
+  .header__user__name a:hover{
+    color: black;
+  }
+
+  .header__user__name a i{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .header__user__profile .header__user__dropdown{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .header__user__profile .header__user__name a:hover .header__user__dropdown{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .header__user__image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+  }
