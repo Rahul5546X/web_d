@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap-Practice</title>
+
+  <!-- Bootstrap css link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
+
+  <!-- Bootstrap icons link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Bootstrap script link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="wrapper p-md-3">
+    <div class="bg-primary px-md-5 py-md-4 mb-5">
+      <!-- Navbar -->
+      <div class="container">
+        <nav class="navbar navbar-expand-lg text-white mb-3" data-bs-theme="dark">
+          <a class="navbar-brand" href="#">Crisme</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </a>
+                <ul class="dropdown-menu bg-white">
+                  <li>
+                    <a class="dropdown-item text-dark" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-dark" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider text-bg-dark" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-dark" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Solutions
+                </a>
+                <ul class="dropdown-menu bg-white">
+                  <li>
+                    <a class="dropdown-item text-dark" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-dark" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider text-bg-dark" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-dark" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link liveAlertBtn" type="button" href="#">Company</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resources
+                </a>
+                <ul class="dropdown-menu bg-white">
+                  <li>
+                    <a class="dropdown-item text-dark" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-dark" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider text-bg-dark" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-dark" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="custom_login_btns d-flex gap-lg-2 justify-content-between">
+              <a class="btn btn-light rounded-pill" href="#">Sign up</a>
+              <a class="btn btn-light rounded-pill" href="#">Sign In</a>
+            </div>
+          </div>
+
+        </nav>
+        <!-- Navbar Ends -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bg-primary text-white" data-bs-theme="dark">
+              <h2 class="fs-1"> Build <span class="text-warning">Customer</span> Relationship Magic
+              </h2>
+              <p> Build stronger customer relatiionships, make more slaes and save time. Proft make it easy to build the exact CRM your business needs.
+              </p>
+              <div class="d-flex gap-3 mb-4">
+                <a class="btn btn-light rounded-pill" href="#">
+                  Start For Free
+                  <i class="bi bi-arrow-up-right-circle-fill "></i>
+                </a>
+                <a class="btn btn-light rounded-pill" href="#">Contact Sales</a>
+              </div>
+              <a href="#" class="link-light text-decoration-none mb-3">
+                <i class="bi bi-check bg-warning rounded-circle p-1"></i>
+                Free 14-day trial
+              </a>
+              <a href="#" class="link-light ms-2 text-decoration-none">
+                <i class="bi bi-check bg-warning rounded-circle p-1"></i>
+                No credit card required
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 text-center text-lg-end">
+            <img src="assets/images/person.png" class="img-fluid" alt="Person standing with computer" width="375" height="283" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <!-- Features section -->
+        <div class="row mb-5">
+          <div class="col text-center">
+            <h2 class="fs-1"><strong>Features That Make Selling Easier</strong></h2>
+          </div>
+        </div>
+        <div class="row mb-5 p-3 bg-primary rounded-4">
+          <div class="col-md-6 text-center mb-5">
+            <div class="bg-primary text-white">
+              <h2 class="mb-2">
+                Manage All Operations with Rich Analytics
+              </h2>
+              <p class="fs-6">
+                Derive actionable insights, create custom reports and
+                dashboards, and measure operations in real-time to drive
+                growth. Leverage our intelligent AI to get accurate
+                predictions.
+              </p>
+              <a href="#" class="btn btn-dark rounded-pill">Start For Free</a>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="assets/images/sales team feature.png" class="img-fluid" alt="" width="351" height="314" />
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="mb-5 col-lg-6">
+            <div class="p-3 bg-primary text-white rounded-4 text-center">
+              <img src="assets/images/streamline buisness.png" class="img-fluid mb-4" alt="..." width="350" height="350" />
+              <h3>Streamline Your Buisness</h3>
+              <p>
+                With the right set of tools, your team will never have to
+                struggle. Generate price quotes and access sales scripts.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-3 bg-primary text-white rounded-4 text-center">
+              <img src="assets/images/performance management.png" class="img-fluid mb-4" alt="..." width="350" height="350" />
+              <h3>Performance Management</h3>
+              <p>
+                With the right set of tools, your team will never have to
+                struggle. Generate price quotes and access sales scripts.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Favorite tools section -->
+        <div class="row mb-5 p-4">
+          <div class="col-md-6 text-center mb-5">
+            <img src="assets/images/favorite tools.png" class="card-img-top img-fluid" alt="..." width="351" height="252" />
+          </div>
+          <div class="col-md-6 text-center ">
+            <h2 class="fs-1 mb-3">
+              Connect Your Favorite Tools
+            </h2>
+            <p class="fs-6">
+              Get the full data picture, combine your community tools with
+              your business data to provide a single source of insight.
+            </p>
+            <a href="#" class="btn btn-dark rounded-pill">Get Started</a>
+          </div>
+        </div>
+        <!-- Help section -->
+        <div class="row mb-5">
+          <div class="col-md-6 order-md-1 text-center mb-5">
+            <img src="assets/images/help.png" class="img-fluid" alt="..." width="449" height="500" />
+          </div>
+          <div class="col-md-6 order-md-0 text-center mb-5">
+            <h2 class="mb-3 fs-1">
+              Need help? We'll be right with you
+            </h2>
+            <p class="fs-6">
+              Our friendly and speedy customer support has all the anwers
+              and is here to help you.
+            </p>
+            <ul class="list-group list-group-flush mb-2">
+              <li class="list-group-item ps-0"></li>
+              <li class="list-group-item ps-0">
+                <i class="bi bi-check"></i>
+                Powerful ecommerce through your ERP
+              </li>
+              <li class="list-group-item ps-0">
+                <i class="bi bi-check"></i>
+                Grow as you go with out-of-the-box B2B e-commerce
+              </li>
+              <li class="list-group-item ps-0">
+                <i class="bi bi-check"></i>
+                Lead with agility and innovation in global, digital
+                markets
+              </li>
+            </ul>
+            <a href="#" class="btn btn-dark rounded-pill">Get Started</a>
+
+          </div>
+        </div>
+        <!-- Meet Customer section -->
+        <div class="row mb-3">
+          <div class="col text-center">
+            <h5 class="mb-3 fs-1">
+              Meet Our Customers
+            </h5>
+            <p class=" fs-6">
+              Managing your people is complex. With assembly platform
+              helps in the areas that matter most. Mamagin your people is
+              complex.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-6 mb-5">
+            <img src="assets/images/customer image.png" class="card-img-top img-fluid" alt="..." width="200" height="200">
+          </div>
+          <div class="col-md-6 mb-5">
+            <p class="fs-4 p-3 text-break">
+              "This magical product actually works! radically change the
+              way we build our audiences. Increasing new customer sales
+              in our market. It was implemented within minutes and it is
+              now an essential part of out amazing developoment
+              process."
+            </p>
+            <a href="#" class="text-dark text-decoration-none p-3">
+              <strong> Ryan Schleifer </strong>
+            </a>
+            <a href="#" class="text-dark text-decoration-none p-3">
+              Rainbow Bay Crafts
+            </a>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col">
+            <div class="progress mb-3" role="progressbar" aria-label="Progress bar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 3px">
+              <div class="progress-bar w-25"></div>
+            </div>
+            <ul class="list-group flex-row justify-content-between">
+              <li class="list-group-item active border-0" aria-current="true">
+                Cactusc
+              </li>
+              <li class="list-group-item border-0">Nextmov</li>
+              <li class="list-group-item border-0">Greenish</li>
+              <li class="list-group-item border-0">levelupe</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Growing without the pains section  -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col bg-primary text-center text-white py-5">
+            <h2 class="mb-3 fs-1">
+              Let's get you growing.
+            </h2>
+            <h2 class="fs-1 mb-3">Without the pains.</h2>
+            <p>
+              CRM that works for you, not the other way around it's
+              lightweight, customizable and powered by AI.
+            </p>
+            <div class="text-center mb-3">
+              <a class="btn btn-light rounded-pill" href="#">Start For Free</a>
+              <a class="btn btn-light rounded-pill" href="#">Contact Sales</a>
+            </div>
+            <a href="#" class="text-white">
+              <i class="bi bi-check"></i>
+              Free 14-day trial
+            </a>
+            <a href="#" class="text-white">
+              <i class="bi bi-check"></i>
+              No credit card required
+            </a>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <div class="container-fluid bg-dark">
+      <div class="row p-5 text-white">
+        <div class="text-center col-xxl-4">
+          <h2 class="fs-1">Start growing with Crisme today</h2>
+        </div>
+        <div class="text-center col-xxl-4">
+          <p>
+            Ignore all the other pricing. No matter what you need, we put
+            together a quote for you.
+          </p>
+        </div>
+        <div class="text-center text-xxl-end col-xxl-4">
+          <button class="btn btn-light rounded-pill">
+            Start For Free
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+</body>
+
+</html>
