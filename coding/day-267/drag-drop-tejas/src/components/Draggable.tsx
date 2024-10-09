@@ -1,0 +1,54 @@
+/**
+ * In this component, we create draggable items(set draggable prop on them) and define onDragStart function. In onDragStart we update the result(that we got from context).
+ */
+import type { ResultPrevState, DraggableProps } from '../interfaces/interfaces';
+import useDragDropContext from '../hooks/useDragDropContext';
+
+function Draggable({
+   id,
+   index,
+   droppableId,
+   droppableType,
+   children,
+   ...draggableProps
+}: DraggableProps) {
+
+   
+   // Accessing values from context.
+   const contextValues = useDragDropContext();
+   if (!contextValues) return;
+   const { isDragging, setIsDragging, setResult } = contextValues;
+
+   /**
+    * This function run every time when we drag an draggable item.
+    * We'll update the result(draggableId, source) using setResult(we got from context) with index and droppableId.
+    */
+   function dragStartHandler(event: React.DragEvent) {
+      event.stopPropagation(); // to get the exact element that user have dragged(useful while there are nested droppables)
+      setIsDragging(true);
+      setResult((prevState: ResultPrevState) => ({
+         ...prevState,
+         draggableId: id,
+         source: {
+            ...prevState.source,
+            index,
+            droppableId,
+            droppableType
+         }
+      }))
+   }
+
+   return (
+      <div
+         draggable
+         id={id}
+         onDragStart={(event) => dragStartHandler(event)}
+         {...draggableProps}
+         style={{ opacity: isDragging ? 0 : 1 }} 
+      >
+         {children}
+      </div>
+   )
+}
+
+export default Draggable;

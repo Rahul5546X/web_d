@@ -1,0 +1,15 @@
+{
+   "compilerOptions": {
+   "lib": ["es2015","DOM","DOM.Iterable"],
+   "module": "commonjs",
+   "outDir": "dist",
+   "sourceMap": true,
+   "strict": true,
+   "target": "es2015",
+   "noImplicitAny": true,
+   "noImplicitReturns": true
+   },
+   "include": [
+   "src"
+   ]
+  }

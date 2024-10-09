@@ -1,0 +1,27 @@
+* {
+   box-sizing: border-box;
+ }
+ html,
+ body,
+ #root {
+   width: 100%;
+   height: 100%;
+   padding-top: 40px;
+   margin-left: 10px;
+ }
+
+ .listItemsContainer{
+   margin-left: 10px;
+   padding: 20px;
+   background-color: red;
+   width: 500px;
+   margin-bottom: 20px;
+ }
+
+ .listItems{
+   padding: 10px;
+   background-color: grey;
+   margin-bottom: 5px;
+   list-style-type: none;
+   width: 300px;
+ }
